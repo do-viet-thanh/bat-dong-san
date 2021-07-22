@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm kiếm</title>
+    <link rel="icon" href="assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery library -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Libs -->
+    <script src="assets/libs/bootstrap4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/libs/bootstrap4/css/bootstrap.css">
+    <script src="assets/libs/fontawesome/fontawesome.js" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href=""/>
+    <link rel="stylesheet" href=""/>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tim-kiem.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <header class=" header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-2 col-sm-1 col-md-1 logo-header">
+                    <img src="assets/images/logo.png">
+                </div>
+                <div class="col-5 col-sm-6 col-md-7 header-menu">
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Navbar links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tin chính chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Bảng giá</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Quy định</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-5 col-sm-5 col-md-4 login">
+                    <button class="dang-ky">Đăng ký</button>
+                    <button class="dang-nhap">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper-top">
+        <div class="container">
+            <div class="col-7 header-content">
+                <h1>Cung cấp hơn 1 triệu bất động sản </h1>
+                <p>ABC cung cấp hơn 1 triệu bất động sản thuộc các loại trên khắp các tỉnh thành toàn quốc với đầy đủ thông tin,
+                    tin cậy, hỗ trợ tìm kiếm dễ dàng nhất</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper-content">
+        <div class="container content" >
+            <div class="form-tim-kiem d-flex">
+                <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Tìm kiếm">
+                </div>
+                <div class="modal-tim-kiem">
+                    <button type="button" class="btn btn-primary btn-filter" data-toggle="modal" data-target="#exampleModal">
+                        <img src="assets/images/icon/Filter.png">
+                        Tìm kiếm nâng cao
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="chon-loc-row d-flex">
+                                    <div class="select">
+                                        <select class="chon-loc-item bat-dong-san">
+                                            <option value="volvo">Bất động sản</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <select class="chon-loc-item thanh-pho">
+                                            <option value="volvo">Tỉnh/Thành phố</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <select class="chon-loc-item thanh-pho">
+                                            <option value="volvo">Quận/Huyện</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="chon-loc-row d-flex">
+                                    <div class="select">
+                                        <select class="chon-loc-item ngay">
+                                            <option value="volvo">Từ ngày</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <select class="chon-loc-item ngay">
+                                            <option value="volvo">Đến ngày</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <select class="chon-loc-item muc-gia">
+                                            <option value="volvo">Mức giá</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <select class="chon-loc-item dien-tich-select">
+                                            <option>Diện tích</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="tim-kiem chon-loc-item">Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered" id="sortTable">
+                <!-- Table head -->
+                <thead>
+                <tr>
+                    <th scope="row">
+                        <!-- Default unchecked -->
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-chinh" type="checkbox" id="exampleCheck1">
+                        </div>
+                    </th>
+                    <td>TIÊU ĐỀ</td>
+                    <td>DANH MỤC</td>
+                    <td>GIÁ</td>
+                    <td>DIỆN TÍCH</td>
+                    <td>SỐ ĐIỆN THOẠI</td>
+                    <td>NGÀY ĐĂNG</td>
+                    <td>
+                        <img src="assets/images/icon/luu.png">
+                        <img src="assets/images/icon/xoa.png">
+                    </td>
+                </tr>
+                </thead>
+                <!-- Table head -->
+
+                <!-- Table body -->
+                <tbody>
+                <script>
+                    for(var i=0; i<=2; i++){
+                        document.write("<tr class='chan'>\n" +
+                            "                <th>\n" +
+                            "                    <div class=\"form-check\">\n" +
+                            "                        <input type=\"checkbox\" class=\"form-check-input\" id=\"exampleCheck1\">\n" +
+                            "                    </div>\n" +
+                            "\n" +
+                            "                </th>\n" +
+                            "                <th class=\"tieu-de\">\n" +
+                            "                    <a data-toggle=\"modal\" data-target=\"#modal-thong-tin\">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>\n" +
+                            "                    <div>\n" +
+                            "                        <img src=\"assets/images/icon/location.png\">\n" +
+                            "                        <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>\n" +
+                            "                    </div>\n" +
+                            "                </th>\n" +
+                            "                <th class=\"danh-muc\"><p>Cho thuê căn hộ và\n" +
+                            "                    chung cư</p></th>\n" +
+                            "                <th class=\"gia\">\n" +
+                            "                    <p>10.000.000đ</p>\n" +
+                            "                    <small>/tháng</small>\n" +
+                            "                </th>\n" +
+                            "                <th class=\"dien-tich\">\n" +
+                            "                    <p>100</p>\n" +
+                            "                    <small>m2</small>\n" +
+                            "                </th>\n" +
+                            "                <th class=\"so-dien-thoai\">\n" +
+                            "                    <p>043 292****</p>\n" +
+                            "                    <button class=\"btn-hien-so\">Hiện số</button>\n" +
+                            "                </th>\n" +
+                            "                <th class=\"ngay-dang\">20/7/2021</th>\n" +
+                            "                <th class=\"luu-xoa\">\n" +
+                            "                    <img src=\"assets/images/icon/luu.png\">\n" +
+                            "                    <img src=\"assets/images/icon/xoa.png\">\n" +
+                            "                </th>\n" +
+                            "            </tr>" +
+                            "            <tr>\n" +
+                            "                <th>\n" +
+                            "                    <div class=\"form-check\">\n" +
+                            "                        <input type=\"checkbox\" class=\"form-check-input\" id=\"exampleCheck1\">\n" +
+                            "                    </div>\n" +
+                            "\n" +
+                            "                </th>\n" +
+                            "                <th class=\"tieu-de\">\n" +
+                            "                    <a data-toggle=\"modal\" data-target=\"#modal-thong-tin\">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>\n" +
+                            "                    <div>\n" +
+                            "                        <img src=\"assets/images/icon/location.png\">\n" +
+                            "                        <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>\n" +
+                            "                    </div>\n" +
+                            "                </th>\n" +
+                            "                <th class=\"danh-muc\">" +
+                            "                   <p>Cho thuê căn hộ và\n" +
+                            "                    chung cư</p></th>\n" +
+                            "                <th class=\"gia\">\n" +
+                            "                    <p>10.000.000đ</p>\n" +
+                            "                    <small>/tháng</small>\n" +
+                            "                </th>\n" +
+                            "                <th class=\"dien-tich\">\n" +
+                            "                    <p>100</p>\n" +
+                            "                    <small>m2</small>\n" +
+                            "                </th>\n" +
+                            "                <th class=\"so-dien-thoai\">\n" +
+                            "                    <p>043 292****</p>\n" +
+                            "                    <button class=\"btn-hien-so\">Hiện số</button>\n" +
+                            "                </th>\n" +
+                            "                <th class=\"ngay-dang\">20/7/2021</th>\n" +
+                            "                <th class=\"luu-xoa\">\n" +
+                            "                    <img src=\"assets/images/icon/luu.png\">\n" +
+                            "                    <img src=\"assets/images/icon/xoa.png\">\n" +
+                            "                </th>\n" +
+                            "            </tr>");
+
+                    }
+                </script>
+                </tbody>
+                <!-- Table body -->
+            </table>
+            <div class="content-mobile">
+                <div class="san-pham-le san-pham d-flex">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    </div>
+                    <div class="mo-ta-san-pham">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                        <small>100 m2</small>
+                        <small>Cho thuê căn hộ và chung cư</small>
+                        <small>20/7/2021</small>
+                    </div>
+                    <div class="thong-tin-san-pham">
+                        <p>10.000.000đ</p>
+                        <button>
+                            <i class="fas fa-phone-alt"></i>
+                            034565*****  Hiện số
+                        </button>
+                        <div class="luu-xoa-san-pham">
+                            <img src="assets/images/icon/luu.png">
+                            <img src="assets/images/icon/xoa.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="san-pham-chan san-pham d-flex">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    </div>
+                    <div class="mo-ta-san-pham">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                        <small>100 m2</small>
+                        <small>Cho thuê căn hộ và chung cư</small>
+                        <small>20/7/2021</small>
+                    </div>
+                    <div class="thong-tin-san-pham">
+                        <p>10.000.000đ</p>
+                        <button>
+                            <i class="fas fa-phone-alt"></i>
+                            034565*****  Hiện số
+                        </button>
+                        <div class="luu-xoa-san-pham">
+                            <img src="assets/images/icon/luu.png">
+                            <img src="assets/images/icon/xoa.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="san-pham-le san-pham d-flex">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    </div>
+                    <div class="mo-ta-san-pham">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                        <small>100 m2</small>
+                        <small>Cho thuê căn hộ và chung cư</small>
+                        <small>20/7/2021</small>
+                    </div>
+                    <div class="thong-tin-san-pham">
+                        <p>10.000.000đ</p>
+                        <button>
+                            <i class="fas fa-phone-alt"></i>
+                            034565*****  Hiện số
+                        </button>
+                        <div class="luu-xoa-san-pham">
+                            <img src="assets/images/icon/luu.png">
+                            <img src="assets/images/icon/xoa.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="san-pham-chan san-pham d-flex">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    </div>
+                    <div class="mo-ta-san-pham">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                        <small>100 m2</small>
+                        <small>Cho thuê căn hộ và chung cư</small>
+                        <small>20/7/2021</small>
+                    </div>
+                    <div class="thong-tin-san-pham">
+                        <p>10.000.000đ</p>
+                        <button>
+                            <i class="fas fa-phone-alt"></i>
+                            034565*****  Hiện số
+                        </button>
+                        <div class="luu-xoa-san-pham">
+                            <img src="assets/images/icon/luu.png">
+                            <img src="assets/images/icon/xoa.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 footer-logo">
+                    <img src="assets/images/logo.png">
+                </div>
+                <div class="col-8">
+                    <h2 class="tittle-footer">ABC BẤT ĐỘNG SẢN</h2>
+                    <div class="dia-chi footer-item">
+                        <img src="assets/images/dia-chi.png">
+                        <p>31 C14 Khu đô thị Geleximco, Đ. Lê Trọng Tấn, Dương Nội, Hà Đông, Hà Nội</p>
+                    </div>
+                    <div class="so-dien-thoai footer-item">
+                        <img src="assets/images/so-dien-thoai.png">
+                        <p>459794323</p>
+                    </div>
+                    <div class="email footer-item">
+                        <img src="assets/images/email.png">
+                        <p>anbbtdongsa@gmail.com</p>
+                    </div>
+                    <div class="dong-ho footer-item">
+                        <img src="assets/images/dong-ho.png">
+                        <p>08:00 - 22:00</p>
+                    </div>
+                </div>
+                <div class="col-2 footer-social">
+                    <div class="fb">
+                        <a href="https://www.facebook.com/">
+                            <img class="img-social" src="assets/images/fb.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtobe.com/">
+                            <img class="img-social" src="assets/images/youtobe.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade modal-thong-tin" id="modal-thong-tin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-thong-tin-desktop" role="document">
+            <div class="modal-content modal-thong-tin-content">
+                <div class="container">
+                    <div class="row modal-header-ttc">
+                        <div class="mo-ta col-7">
+                            <h3>Nhà siêu đẹp mùa dịch giá cực tốt - gần cao tốc - ngay khu An Phú,
+                                Q2 full đầy đủ nội thất 24,7 tỷ</h3>
+                            <p>Thông tin mô tả</p>
+                            <small>Vị trí ngay cổng Số 543 Nguyễn Duy Trinh, P. Bình Trưng Đông,
+                                Q2 đi vào - mặt tiền lớn - Thuộc khu nhà phố biệt thự Lạkeview City - Novaland.
+                            </small>
+                            <div class="btn-mo-ta">
+                                <button>
+                                    <i class="far fa-trash-alt"></i>Xóa
+                                </button>
+                                <button class="btn-luu-tin">
+                                    <i class="fas fa-bookmark"></i>Lưu tin
+                                </button>
+                            </div>
+                        </div>
+                        <div class="thong-tin-chung col-4">
+                            <div class="ttc-content">
+                                <h3 class="ttc-h3">THÔNG TIN CHUNG</h3>
+                                <div class="ttc-item d-flex">
+                                    <img src="assets/images/icon/muc-gia.png">
+                                    <p class="de-muc-ttc">Giá:</p>
+                                    <p>10.000.000đ/m2</p>
+                                </div>
+                                <div class="ttc-item d-flex">
+                                    <img src="assets/images/icon/sdt.png">
+                                    <p class="de-muc-ttc">Số điện thoại:</p>
+                                    <p>0944920293</p>
+                                </div>
+                                <div class="ttc-item d-flex">
+                                    <img src="assets/images/icon/ngay.png">
+                                    <p class="de-muc-ttc">Ngày đăng:</p>
+                                    <p>12/6/2021</p>
+                                </div>
+                                <div class="ttc-item d-flex">
+                                    <img src="assets/images/icon/dien-tich.png">
+                                    <p class="de-muc-ttc">Diện tích:</p>
+                                    <p>70 m2</p>
+                                </div>
+                                <div class="ttc-item d-flex">
+                                    <img src="assets/images/icon/menu.png">
+                                    <p class="de-muc-ttc">Danh mục:</p>
+                                    <p>Cho thuê căn hộ</p>
+                                </div>
+                                <div class="ttc-item d-flex">
+                                    <img src="assets/images/icon/quan-huyen.png">
+                                    <p class="de-muc-ttc">Quận/Huyện:</p>
+                                    <p>Cầu Giấy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="close col-1" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                    <div class="modal-footer-ttc container">
+                        <h3 class="ttc-h3">TIN LIÊN QUAN</h3>
+                        <div class="tin-lien-quan row">
+                            <div class="col-4 p-2">
+                                <div class="tin-lien-quan-item">
+                                    <p>Cho thuê căn hộ 2 phòng ngủ tại Mỹ Đình dự án ABC</p>
+                                    <p class="gia-thue">5.000.000đ</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-lg-5 p-2">
+                                <div class="tin-lien-quan-item">
+                                    <p>Cho thuê căn hộ 2 phòng ngủ tại Mỹ Đình dự án ABC</p>
+                                    <p class="gia-thue">5.000.000đ</p>
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <div class="tin-lien-quan-item">
+                                    <p>Cho thuê căn hộ 2 phòng ngủ tại Mỹ Đình dự án ABC</p>
+                                    <p class="gia-thue">5.000.000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-dialog modal-thong-tin-mobile" role="document">
+            <div class="modal-content modal-thong-tin-content">
+                <div class="">
+                    <div class="row modal-header-ttc">
+                        <div class="mo-ta">
+                            <h3>Nhà siêu đẹp mùa dịch giá cực tốt - gần cao tốc - ngay khu An Phú,
+                                Q2 full đầy đủ nội thất 24,7 tỷ</h3>
+                            <p>Thông tin mô tả</p>
+                            <small>Vị trí ngay cổng Số 543 Nguyễn Duy Trinh, P. Bình Trưng Đông,
+                                Q2 đi vào - mặt tiền lớn - Thuộc khu nhà phố biệt thự Lạkeview City - Novaland.
+                            </small>
+                            <div class="thong-tin-chung">
+                                <div class="ttc-content">
+                                    <div class="row">
+                                        <div class="ttc-item d-flex col-6">
+                                            <img src="assets/images/icon/muc-gia.png">
+                                            <p class="de-muc-ttc">Giá:</p>
+                                            <p>10.000.000đ/m2</p>
+                                        </div>
+                                        <div class="ttc-item d-flex col-6">
+                                            <img src="assets/images/icon/dien-tich.png">
+                                            <p class="de-muc-ttc">Diện tích:</p>
+                                            <p>70 m2</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttc-item d-flex col-6">
+                                            <img src="assets/images/icon/sdt.png">
+                                            <p class="de-muc-ttc">Số điện thoại:</p>
+                                            <p>0944920293</p>
+                                        </div>
+                                        <div class="ttc-item d-flex col-6">
+                                            <img src="assets/images/icon/menu.png">
+                                            <p class="de-muc-ttc">Danh mục:</p>
+                                            <p>Cho thuê căn hộ</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttc-item d-flex col-6">
+                                            <img src="assets/images/icon/ngay.png">
+                                            <p class="de-muc-ttc">Ngày đăng:</p>
+                                            <p>12/6/2021</p>
+                                        </div>
+                                        <div class="ttc-item d-flex col-6">
+                                            <img src="assets/images/icon/quan-huyen.png">
+                                            <p class="de-muc-ttc">Quận/Huyện:</p>
+                                            <p>Cầu Giấy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-mo-ta">
+                                <button>
+                                    <i class="far fa-trash-alt"></i>Xóa
+                                </button>
+                                <button class="btn-luu-tin">
+                                    <i class="fas fa-bookmark"></i>Lưu tin
+                                </button>
+                            </div>
+                        </div>
+                        <button type="button" class="close col-1" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-footer-ttc container">
+                        <h3 class="ttc-h3">TIN LIÊN QUAN</h3>
+                        <div class="tin-lien-quan row">
+                            <div class="p-2">
+                                <div class="tin-lien-quan-item">
+                                    <p>Cho thuê căn hộ 2 phòng ngủ tại Mỹ Đình dự án ABC</p>
+                                    <p class="gia-thue">5.000.000đ</p>
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <div class="tin-lien-quan-item">
+                                    <p>Cho thuê căn hộ 2 phòng ngủ tại Mỹ Đình dự án ABC</p>
+                                    <p class="gia-thue">5.000.000đ</p>
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <div class="tin-lien-quan-item">
+                                    <p>Cho thuê căn hộ 2 phòng ngủ tại Mỹ Đình dự án ABC</p>
+                                    <p class="gia-thue">5.000.000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
