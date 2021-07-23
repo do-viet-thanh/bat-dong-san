@@ -20,6 +20,11 @@
 .navbar-toggler:focus{
     outline: none;
 }
+.collapse.show {
+    position: absolute;
+    top: 120%;
+    z-index: 1000;
+}
 .login{
     text-align: right;
     padding-left: 0px;
@@ -147,10 +152,10 @@
     background: #F4F7FC;
     padding: 130px 0px 50px 0px;
 }
-.chan{
+tr:nth-child(even) {
     background: white;
 }
-.checkbox-chinh{
+.checkbox-all{
     bottom: 15px;
 }
 .table-bordered {
@@ -272,7 +277,7 @@ td{
         background-position: 10px center;
     }
     .tim-kiem{
-        padding: 10px 40px !important;
+        padding: 10px 32px !important;
     }
     /* FOOTER */
     .footer{
@@ -391,7 +396,6 @@ td{
     }
     .navbar-nav{
         background: white;
-        width: 50%;
         padding: 0px 15px;
         border-radius: 10px;
     }
@@ -445,9 +449,7 @@ td{
     .content-mobile{
         display: unset;
     }
-    .san-pham-le{
-        background: white;
-    }
+    .san-pham:nth-child(odd) {background: #FFF}
     .san-pham{
         width: 100%;
         padding: 20px;
@@ -492,6 +494,28 @@ td{
     .thong-tin-san-pham button:focus{
         outline: none;
     }
+    /* FOOTER */
+    .footer {
+        padding: 15px;
+    }
+    .footer-logo > img {
+        height: 50%;
+    }
+    .tittle-footer {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .footer-item p {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+    .img-social {
+        height: 34px;
+    }
+    .footer-item > img {
+        margin-top: 3px;
+    }
+    /* END FOOTER */
 }
 @media (max-width: 576px) {
     .wrapper-top {
@@ -524,7 +548,6 @@ td{
     }
     .navbar-nav{
         background: white;
-        width: 50%;
         padding: 0px 15px;
         border-radius: 10px;
     }
@@ -601,36 +624,39 @@ td{
     .modal-content {
         padding: 5px;
     }
+    /* FOOTER */
+    .footer{
+        padding: 10px 0px;
+    }
     .footer-logo {
         text-align: left;
     }
     .footer-logo img{
-        height: 60px;
+        height: 52px;
     }
     .tittle-footer {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 5px;
     }
     .footer-item p {
-        font-size: 13px;
+        font-size: 10px;
         margin-bottom: 2px;
     }
     .footer-item > img {
-        margin-right: 10px;
+        margin-right: 8px;
         margin-top: 3px;
         width: 15px;
     }
     .footer-social{
         padding-left: 0px;
     }
-    .fb {
-        margin: 10px 0px;
-    }
     .img-social {
-        height: 30px;
+        height: 25px;
     }
+
 }
 
+/* MODAL */
 @media (max-width: 767px) {
     .wrapper-top {
         padding: 80px 0px 30px 0px;
@@ -719,6 +745,7 @@ td{
         margin-left: 10px;
     }
 }
+
 
 /* MODAl Thông tin */
 .modal-thong-tin-desktop{

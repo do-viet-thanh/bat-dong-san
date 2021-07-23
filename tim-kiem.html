@@ -143,7 +143,7 @@
                     <th scope="row">
                         <!-- Default unchecked -->
                         <div class="form-check">
-                            <input class="form-check-input checkbox-chinh" type="checkbox" id="exampleCheck1">
+                            <input class="form-check-input checkbox-all" type="checkbox" id="checkboxall">
                         </div>
                     </th>
                     <td>TIÊU ĐỀ</td>
@@ -162,80 +162,210 @@
 
                 <!-- Table body -->
                 <tbody>
-                <script>
-                    for(var i=0; i<=2; i++){
-                        document.write("<tr class='chan'>\n" +
-                            "                <th>\n" +
-                            "                    <div class=\"form-check\">\n" +
-                            "                        <input type=\"checkbox\" class=\"form-check-input\" id=\"exampleCheck1\">\n" +
-                            "                    </div>\n" +
-                            "\n" +
-                            "                </th>\n" +
-                            "                <th class=\"tieu-de\">\n" +
-                            "                    <a data-toggle=\"modal\" data-target=\"#modal-thong-tin\">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>\n" +
-                            "                    <div>\n" +
-                            "                        <img src=\"assets/images/icon/location.png\">\n" +
-                            "                        <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>\n" +
-                            "                    </div>\n" +
-                            "                </th>\n" +
-                            "                <th class=\"danh-muc\"><p>Cho thuê căn hộ và\n" +
-                            "                    chung cư</p></th>\n" +
-                            "                <th class=\"gia\">\n" +
-                            "                    <p>10.000.000đ</p>\n" +
-                            "                    <small>/tháng</small>\n" +
-                            "                </th>\n" +
-                            "                <th class=\"dien-tich\">\n" +
-                            "                    <p>100</p>\n" +
-                            "                    <small>m2</small>\n" +
-                            "                </th>\n" +
-                            "                <th class=\"so-dien-thoai\">\n" +
-                            "                    <p>043 292****</p>\n" +
-                            "                    <button class=\"btn-hien-so\">Hiện số</button>\n" +
-                            "                </th>\n" +
-                            "                <th class=\"ngay-dang\">20/7/2021</th>\n" +
-                            "                <th class=\"luu-xoa\">\n" +
-                            "                    <img src=\"assets/images/icon/luu.png\">\n" +
-                            "                    <img src=\"assets/images/icon/xoa.png\">\n" +
-                            "                </th>\n" +
-                            "            </tr>" +
-                            "            <tr>\n" +
-                            "                <th>\n" +
-                            "                    <div class=\"form-check\">\n" +
-                            "                        <input type=\"checkbox\" class=\"form-check-input\" id=\"exampleCheck1\">\n" +
-                            "                    </div>\n" +
-                            "\n" +
-                            "                </th>\n" +
-                            "                <th class=\"tieu-de\">\n" +
-                            "                    <a data-toggle=\"modal\" data-target=\"#modal-thong-tin\">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>\n" +
-                            "                    <div>\n" +
-                            "                        <img src=\"assets/images/icon/location.png\">\n" +
-                            "                        <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>\n" +
-                            "                    </div>\n" +
-                            "                </th>\n" +
-                            "                <th class=\"danh-muc\">" +
-                            "                   <p>Cho thuê căn hộ và\n" +
-                            "                    chung cư</p></th>\n" +
-                            "                <th class=\"gia\">\n" +
-                            "                    <p>10.000.000đ</p>\n" +
-                            "                    <small>/tháng</small>\n" +
-                            "                </th>\n" +
-                            "                <th class=\"dien-tich\">\n" +
-                            "                    <p>100</p>\n" +
-                            "                    <small>m2</small>\n" +
-                            "                </th>\n" +
-                            "                <th class=\"so-dien-thoai\">\n" +
-                            "                    <p>043 292****</p>\n" +
-                            "                    <button class=\"btn-hien-so\">Hiện số</button>\n" +
-                            "                </th>\n" +
-                            "                <th class=\"ngay-dang\">20/7/2021</th>\n" +
-                            "                <th class=\"luu-xoa\">\n" +
-                            "                    <img src=\"assets/images/icon/luu.png\">\n" +
-                            "                    <img src=\"assets/images/icon/xoa.png\">\n" +
-                            "                </th>\n" +
-                            "            </tr>");
-
-                    }
-                </script>
+                <tr>
+                    <th>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="#checkbox">
+                        </div>
+                    </th>
+                    <th class="tieu-de">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng
+                        </a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                    </th>
+                    <th class="danh-muc"><p>Cho thuê căn hộ và chung cư</p>
+                    </th>
+                    <th class="gia">
+                        <p>10.000.000đ</p>
+                        <small>/tháng</small>
+                    </th>
+                    <th class="dien-tich">
+                        <p>100</p>
+                        <small>m2</small>
+                    </th>
+                    <th class="so-dien-thoai">
+                        <p>043 292****</p>
+                        <button class="btn-hien-so">Hiện số</button>
+                    </th>
+                    <th class="ngay-dang">20/7/2021</th>
+                    <th class="luu-xoa">
+                        <img src="assets/images/icon/luu.png">
+                        <img src="assets/images/icon/xoa.png">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="checkbox1">
+                        </div>
+                    </th>
+                    <th class="tieu-de">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng
+                        </a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                    </th>
+                    <th class="danh-muc"><p>Cho thuê căn hộ và chung cư</p>
+                    </th>
+                    <th class="gia">
+                        <p>10.000.000đ</p>
+                        <small>/tháng</small>
+                    </th>
+                    <th class="dien-tich">
+                        <p>100</p>
+                        <small>m2</small>
+                    </th>
+                    <th class="so-dien-thoai">
+                        <p>043 292****</p>
+                        <button class="btn-hien-so">Hiện số</button>
+                    </th>
+                    <th class="ngay-dang">20/7/2021</th>
+                    <th class="luu-xoa">
+                        <img src="assets/images/icon/luu.png">
+                        <img src="assets/images/icon/xoa.png">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        </div>
+                    </th>
+                    <th class="tieu-de">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng
+                        </a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                    </th>
+                    <th class="danh-muc"><p>Cho thuê căn hộ và chung cư</p>
+                    </th>
+                    <th class="gia">
+                        <p>10.000.000đ</p>
+                        <small>/tháng</small>
+                    </th>
+                    <th class="dien-tich">
+                        <p>100</p>
+                        <small>m2</small>
+                    </th>
+                    <th class="so-dien-thoai">
+                        <p>043 292****</p>
+                        <button class="btn-hien-so">Hiện số</button>
+                    </th>
+                    <th class="ngay-dang">20/7/2021</th>
+                    <th class="luu-xoa">
+                        <img src="assets/images/icon/luu.png">
+                        <img src="assets/images/icon/xoa.png">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        </div>
+                    </th>
+                    <th class="tieu-de">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng
+                        </a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                    </th>
+                    <th class="danh-muc"><p>Cho thuê căn hộ và chung cư</p>
+                    </th>
+                    <th class="gia">
+                        <p>10.000.000đ</p>
+                        <small>/tháng</small>
+                    </th>
+                    <th class="dien-tich">
+                        <p>100</p>
+                        <small>m2</small>
+                    </th>
+                    <th class="so-dien-thoai">
+                        <p>043 292****</p>
+                        <button class="btn-hien-so">Hiện số</button>
+                    </th>
+                    <th class="ngay-dang">20/7/2021</th>
+                    <th class="luu-xoa">
+                        <img src="assets/images/icon/luu.png">
+                        <img src="assets/images/icon/xoa.png">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        </div>
+                    </th>
+                    <th class="tieu-de">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng
+                        </a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                    </th>
+                    <th class="danh-muc"><p>Cho thuê căn hộ và chung cư</p>
+                    </th>
+                    <th class="gia">
+                        <p>10.000.000đ</p>
+                        <small>/tháng</small>
+                    </th>
+                    <th class="dien-tich">
+                        <p>100</p>
+                        <small>m2</small>
+                    </th>
+                    <th class="so-dien-thoai">
+                        <p>043 292****</p>
+                        <button class="btn-hien-so">Hiện số</button>
+                    </th>
+                    <th class="ngay-dang">20/7/2021</th>
+                    <th class="luu-xoa">
+                        <img src="assets/images/icon/luu.png">
+                        <img src="assets/images/icon/xoa.png">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        </div>
+                    </th>
+                    <th class="tieu-de">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng
+                        </a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                    </th>
+                    <th class="danh-muc"><p>Cho thuê căn hộ và chung cư</p>
+                    </th>
+                    <th class="gia">
+                        <p>10.000.000đ</p>
+                        <small>/tháng</small>
+                    </th>
+                    <th class="dien-tich">
+                        <p>100</p>
+                        <small>m2</small>
+                    </th>
+                    <th class="so-dien-thoai">
+                        <p>043 292****</p>
+                        <button class="btn-hien-so">Hiện số</button>
+                    </th>
+                    <th class="ngay-dang">20/7/2021</th>
+                    <th class="luu-xoa">
+                        <img src="assets/images/icon/luu.png">
+                        <img src="assets/images/icon/xoa.png">
+                    </th>
+                </tr>
                 </tbody>
                 <!-- Table body -->
             </table>

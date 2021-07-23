@@ -1,0 +1,210 @@
+.header{
+    position: unset !important;
+    background-image: url("../images/header.png");
+}
+.navbar-nav .nav-link {
+    color: white !important;
+}
+.main{
+    background: #F3F3FA;
+    padding: 100px 200px;
+}
+.content-dang-nhap{
+    padding: 100px 250px;
+}
+.muc-dang-ky{
+    background: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    max-width: 1000px;
+}
+.muc-dang-ky h1{
+    font-family: Merriweather;
+    font-weight: bold;
+}
+.form{
+    display: grid;
+}
+.form label{
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 27px;
+    align-items: center;
+    color: #091638;
+    margin-bottom: 5px;
+}
+.form input{
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+.form input:focus{
+    outline: none;
+}
+.img-login img{
+    width: inherit;
+    border-top: 1px solid #0957CB;
+    padding-top: 30px;
+}
+.checkbox-dieu-khoan{
+    margin: 6px 10px 0px 0px;
+}
+.dieu-khoan{
+    margin-bottom: 20px;
+}
+.dieu-khoan a{
+    color: #12026B;
+    text-decoration: underline;
+}
+.btn-dang-ky{
+    background: #0957CB;
+    box-shadow: 0px 7px 17px rgba(9, 87, 203, 0.32);
+    border-radius: 25px;
+    border: 0px;
+    color: white;
+    padding: 8px 40px;
+    font-size: 17px;
+}
+.btn-dang-nhap{
+    border: 1px solid #12026B;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 7px 17px rgba(9, 87, 203, 0.32));
+    border-radius: 25px;
+    color: #12026B;
+    padding: 8px 20px;
+    font-size: 17px;
+}
+.btn-dang-nhap, .btn-dang-ky:hover{
+    cursor: pointer;
+}
+.form-dang-nhap{
+    padding: 30px 0px !important;
+}
+
+@media (max-width: 1200px) {
+    .main{
+        padding: 80px 100px;
+    }
+    .content-dang-nhap{
+        padding: 80px 120px;
+    }
+    .muc-dang-ky{
+        padding: 30px 40px;
+    }
+    .muc-dang-ky h1{
+        font-size: 34px;
+    }
+    .form input{
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .main{
+        padding: 60px;
+    }
+    .content-dang-nhap{
+        padding: 60px 80px;
+    }
+    .form input{
+        padding: 8px;
+        margin-bottom: 6px;
+        font-size: 13px;
+    }
+    .form label {
+        font-size: 17px;
+        margin-bottom: 2px;
+    }
+    .muc-dang-ky h1{
+        font-size: 32px;
+    }
+    .login-right{
+        padding-left: 0px;
+    }
+    .btn-dang-ky{
+        padding: 8px 25px;
+        font-size: 17px;
+    }
+    .btn-dang-nhap{
+        padding: 8px 15px;
+        font-size: 17px;
+    }
+    .dieu-khoan {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .main{
+        padding: 50px;
+    }
+    .content-dang-nhap{
+        padding: 50px 60px;
+    }
+    .form input{
+        padding: 8px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .navbar-nav .nav-link {
+        color: #3E3E3E !important;
+    }
+    .form label {
+        margin-bottom: 5px;
+    }
+    .muc-dang-ky {
+        padding: 30px;
+    }
+    .muc-dang-ky h1{
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #12026B;
+        font-weight: 600;
+        font-family: unset;
+        margin-bottom: 15px;
+    }
+    .img-login{
+        display: none;
+    }
+    .form-dang-nhap{
+        padding: 0px !important;
+    }
+    .login-right{
+        padding: 0px 16px;
+    }
+}
+@media (max-width: 576px) {
+    .main{
+        padding: 30px 15px;
+    }
+    .muc-dang-ky {
+        padding: 15px;
+    }
+    .content-dang-nhap{
+        padding: 30px;
+    }
+    .form input{
+        margin-bottom: 8px;
+    }
+    .form label {
+        margin-bottom: 3px;
+        font-size: 16px;
+    }
+    .muc-dang-ky h1{
+        font-size: 18px;
+    }
+    .dieu-khoan {
+        font-size: 15px;
+    }
+    .btn-dang-ky{
+        padding: 6px 25px;
+        font-size: 16px;
+    }
+    .btn-dang-nhap{
+        padding: 6px 15px;
+        font-size: 16px;
+    }
+}
