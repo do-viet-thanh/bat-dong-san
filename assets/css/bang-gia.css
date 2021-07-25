@@ -1,0 +1,110 @@
+h1, h2, h3, h4, p {
+    margin: 0px;
+}
+.gia-tin h4 {
+    font-size: 20px;
+}
+.bang-gia {
+    padding: 30px 0px;
+}
+.chi-tiet h4 {
+    font-weight: 600;
+    padding: 20px 0px;
+    font-size: 18px;
+}
+.dung-thu, .goi-3 {
+    text-align: center;
+    background-color: #fafafa;
+    box-shadow: 0 3px 8px 5px rgb(0 0 0 / 7%);
+    border-radius: 5px;
+    height: 400px;
+}
+.dung-thu h3, .goi-3 h3 {
+    padding: 30px 0px;
+    border-bottom: 1px solid #f1efef;
+    margin-bottom: 30px;
+}
+.goi-tin {
+    height: 150px;
+}
+.dung-thu h5, .best-seller h5, .goi-3 h5 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.dung-thu h5 {
+    line-height: 120px;
+}
+.dung-thu p, .best-seller p, .goi-3 p {
+    padding: 0px 20px;
+    font-size: 15px !important;
+}
+/* Gói 2 */
+.best-seller .tieu-de {
+    padding: 15px 0px;
+    border-bottom: 1px solid #5d66dd;
+    margin-bottom: 30px;
+}
+.best-seller {
+    text-align: center;
+    color: #fff;
+    background: #6f8ff6;
+    background-image: linear-gradient(to bottom, #6f8ff6, #8a5edd);
+    box-shadow: 0 3px 8px 5px rgb(216 218 247 / 29%);
+    border-radius: 5px;
+    height: 400px;
+}
+.goi-tin {
+    height: 150px;
+}
+.dung-thu h5, .best-seller h5, .goi-3 h5 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.dung-thu p, .best-seller p, .goi-3 p {
+    padding: 0px 20px;
+    font-size: 15px !important;
+}
+.best-seller .tieu-de span {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: unset;
+    font-weight: 300;
+}
+/* gói 3 */
+.dung-thu, .goi-3 {
+    text-align: center;
+    background-color: #fafafa;
+    box-shadow: 0 3px 8px 5px rgb(0 0 0 / 7%);
+    border-radius: 5px;
+    height: 400px;
+}
+
+
+table {
+    margin: 20px 0px;
+}
+.chi-tiet h4 {
+    font-weight: 600;
+    padding: 20px 0px;
+    font-size: 18px;
+}
+th {
+    text-align: center;
+    font-family: arial;
+    font-weight: 400;
+    line-height: 2.2;
+}
+td {
+    line-height: 2.2;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: unset;
+}
+.chi-tiet p {
+    font-size: 18px;
+    line-height: 1.8 !important;
+}
+.gia-tin h4 {
+    font-size: 20px;
+}

@@ -17,6 +17,7 @@
     padding: 40px 50px;
     border-radius: 20px;
     max-width: 1000px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .muc-dang-ky h1{
     font-family: Merriweather;
@@ -59,6 +60,12 @@
     color: #12026B;
     text-decoration: underline;
 }
+.dang-ky {
+    color: white !important;
+}
+.dang-ky {
+    color: #0957CB !important;
+}
 .btn-dang-ky{
     background: #0957CB;
     box-shadow: 0px 7px 17px rgba(9, 87, 203, 0.32);
@@ -79,6 +86,9 @@
 }
 .btn-dang-nhap, .btn-dang-ky:hover{
     cursor: pointer;
+}
+.btn-dang-nhap, .btn-dang-ky:focus{
+    outline: none;
 }
 .form-dang-nhap{
     padding: 30px 0px !important;
@@ -153,12 +163,19 @@
     }
     .form label {
         margin-bottom: 5px;
+        font-size: 16px;
+    }
+    .dieu-khoan{
+        font-size: 15px;
+    }
+    .btn-dang-ky, .btn-dang-nhap{
+        font-size: 16px;
     }
     .muc-dang-ky {
         padding: 30px;
     }
     .muc-dang-ky h1{
-        font-size: 25px;
+        font-size: 23px;
         text-transform: uppercase;
         text-align: center;
         color: #12026B;
@@ -188,23 +205,24 @@
     }
     .form input{
         margin-bottom: 8px;
+        font-size: 13px;
     }
     .form label {
         margin-bottom: 3px;
-        font-size: 16px;
+        font-size: 15px;
     }
     .muc-dang-ky h1{
-        font-size: 18px;
+        font-size: 16px;
     }
     .dieu-khoan {
-        font-size: 15px;
+        font-size: 14px;
     }
     .btn-dang-ky{
         padding: 6px 25px;
-        font-size: 16px;
+        font-size: 15px;
     }
     .btn-dang-nhap{
         padding: 6px 15px;
-        font-size: 16px;
+        font-size: 15px;
     }
 }

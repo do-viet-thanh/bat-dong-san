@@ -2,17 +2,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Tìm kiếm</title>
+    <title>Tin đã lưu</title>
     <link rel="icon" href="assets/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- jQuery library -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
 
     <!-- Libs -->
     <script src="assets/libs/bootstrap4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/libs/bootstrap4/css/bootstrap.css">
     <script src="assets/libs/fontawesome/fontawesome.js" crossorigin="anonymous"></script>
+    <script src="assets/libs/bootstrap4/js/bootstrap.bundle.min.js"></script>
 
     <!-- Fonts -->
     <link rel="stylesheet" href=""/>
@@ -20,7 +22,9 @@
 
     <!-- My Style -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/tim-kiem.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/thog-tin-ca-nhan.css">
+    <link rel="stylesheet" href="assets/css/tin-da-luu.css">
 </head>
 
 <body>
@@ -67,18 +71,19 @@
             </div>
         </div>
     </header>
-    <section class="wrapper-top">
-        <div class="container">
-            <div class="col-7 header-content">
-                <h1>Cung cấp hơn 1 triệu bất động sản </h1>
-                <p>ABC cung cấp hơn 1 triệu bất động sản thuộc các loại trên khắp các tỉnh thành toàn quốc với đầy đủ thông tin,
-                    tin cậy, hỗ trợ tìm kiếm dễ dàng nhất</p>
+    <main class="main">
+        <div class="container ca-nhan">
+            <div class="row ca-nhan-item">
+                <a class="thong-tin-ca-nhan">
+                    Thông tin cá nhân
+                </a>
+                <a class="muc-tin-da-luu">
+                    Tin đã lưu
+                </a>
+                <a class="doi-mat-khau">
+                    Đổi mật khẩu
+                </a>
             </div>
-        </div>
-    </section>
-
-    <section class="wrapper-content">
-        <div class="container content" >
             <div class="form-tim-kiem d-flex">
                 <div class="form-group has-search">
                     <span class="fa fa-search form-control-feedback"></span>
@@ -156,8 +161,8 @@
                     <td>DIỆN TÍCH</td>
                     <td>SỐ ĐIỆN THOẠI</td>
                     <td>NGÀY ĐĂNG</td>
+                    <td>GHI CHÚ</td>
                     <td>
-                        <a><img src="assets/images/icon/luu.png"></a>
                         <a><img src="assets/images/icon/xoa.png"></a>
                     </td>
                 </tr>
@@ -195,8 +200,10 @@
                         <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
+                    <th>
+                        <a><i class="fas fa-book"></i></a>
+                    </th>
                     <th class="luu-xoa">
-                        <a><img src="assets/images/icon/luu.png"></a>
                         <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
@@ -229,8 +236,10 @@
                         <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
+                    <th>
+                        <a><i class="fas fa-book"></i></a>
+                    </th>
                     <th class="luu-xoa">
-                        <a><img src="assets/images/icon/luu.png"></a>
                         <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
@@ -263,8 +272,10 @@
                         <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
+                    <th>
+                        <a><i class="fas fa-book"></i></a>
+                    </th>
                     <th class="luu-xoa">
-                        <a><img src="assets/images/icon/luu.png"></a>
                         <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
@@ -297,8 +308,10 @@
                         <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
+                    <th>
+                        <a><i class="fas fa-book"></i></a>
+                    </th>
                     <th class="luu-xoa">
-                        <a><img src="assets/images/icon/luu.png"></a>
                         <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
@@ -331,15 +344,17 @@
                         <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
+                    <th>
+                        <a><i class="fas fa-book"></i></a>
+                    </th>
                     <th class="luu-xoa">
-                        <a><img src="assets/images/icon/luu.png"></a>
                         <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
                 <tr>
                     <th>
                         <div class="form-check">
-                            <input type="checkbox" name='domainList' class="form-check-input" id="checkbox6">
+                            <input type="checkbox" name='domainList' class="form-check-input" id="exampleCheck1">
                         </div>
                     </th>
                     <th class="tieu-de">
@@ -365,8 +380,10 @@
                         <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
+                    <th>
+                        <a><i class="fas fa-book"></i></a>
+                    </th>
                     <th class="luu-xoa">
-                        <a><img src="assets/images/icon/luu.png"></a>
                         <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
@@ -374,9 +391,9 @@
                 <!-- Table body -->
             </table>
             <div class="content-mobile">
-                <div class="san-pham d-flex">
+                <div class="san-pham-le san-pham d-flex">
                     <div class="form-check">
-                        <input type="checkbox" name='domainList' class="form-check-input" id="checkbox-mobile1">
+                        <input type="checkbox" class="form-check-input" id="checkbox-mobile1">
                     </div>
                     <div class="mo-ta-san-pham">
                         <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
@@ -395,6 +412,61 @@
                             034565***** Hiện số
                         </button>
                         <div class="luu-xoa-san-pham">
+                            <a><i class="fas fa-book"></i></a>
+                            <a><img src="assets/images/icon/luu.png"></a>
+                            <a><img src="assets/images/icon/xoa.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="san-pham-chan san-pham d-flex">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="checkbox-mobile2">
+                    </div>
+                    <div class="mo-ta-san-pham">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                        <small>100 m2</small>
+                        <small>Cho thuê căn hộ và chung cư</small>
+                        <small>20/7/2021</small>
+                    </div>
+                    <div class="thong-tin-san-pham">
+                        <p>10.000.000đ</p>
+                        <button href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">
+                            <i class="fas fa-phone-alt"></i>
+                            034565***** Hiện số
+                        </button>
+                        <div class="luu-xoa-san-pham">
+                            <a><i class="fas fa-book"></i></a>
+                            <a><img src="assets/images/icon/luu.png"></a>
+                            <a><img src="assets/images/icon/xoa.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="san-pham-le san-pham d-flex">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="checkbox-mobile3">
+                    </div>
+                    <div class="mo-ta-san-pham">
+                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
+                        <div>
+                            <img src="assets/images/icon/location.png">
+                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
+                        </div>
+                        <small>100 m2</small>
+                        <small>Cho thuê căn hộ và chung cư</small>
+                        <small>20/7/2021</small>
+                    </div>
+                    <div class="thong-tin-san-pham">
+                        <p>10.000.000đ</p>
+                        <button href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">
+                            <i class="fas fa-phone-alt"></i>
+                            034565***** Hiện số
+                        </button>
+                        <div class="luu-xoa-san-pham">
+                            <a><i class="fas fa-book"></i></a>
                             <a><img src="assets/images/icon/luu.png"></a>
                             <a><img src="assets/images/icon/xoa.png"></a>
                         </div>
@@ -402,7 +474,7 @@
                 </div>
                 <div class="san-pham d-flex">
                     <div class="form-check">
-                        <input type="checkbox" name='domainList' class="form-check-input" id="checkbox-mobile2">
+                        <input type="checkbox" class="form-check-input" id="checkbox-mobile4">
                     </div>
                     <div class="mo-ta-san-pham">
                         <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
@@ -421,58 +493,7 @@
                             034565***** Hiện số
                         </button>
                         <div class="luu-xoa-san-pham">
-                            <a><img src="assets/images/icon/luu.png"></a>
-                            <a><img src="assets/images/icon/xoa.png"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="san-pham d-flex">
-                    <div class="form-check">
-                        <input type="checkbox" name='domainList' class="form-check-input" id="checkbox-mobile3">
-                    </div>
-                    <div class="mo-ta-san-pham">
-                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
-                        <div>
-                            <img src="assets/images/icon/location.png">
-                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
-                        </div>
-                        <small>100 m2</small>
-                        <small>Cho thuê căn hộ và chung cư</small>
-                        <small>20/7/2021</small>
-                    </div>
-                    <div class="thong-tin-san-pham">
-                        <p>10.000.000đ</p>
-                        <button href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">
-                            <i class="fas fa-phone-alt"></i>
-                            034565***** Hiện số
-                        </button>
-                        <div class="luu-xoa-san-pham">
-                            <a><img src="assets/images/icon/luu.png"></a>
-                            <a><img src="assets/images/icon/xoa.png"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="san-pham d-flex">
-                    <div class="form-check">
-                        <input type="checkbox" name='domainList' class="form-check-input" id="checkbox-mobile4">
-                    </div>
-                    <div class="mo-ta-san-pham">
-                        <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
-                        <div>
-                            <img src="assets/images/icon/location.png">
-                            <small>Số 1 Phạm Hùng, Mỹ Đình, Hà Nội</small>
-                        </div>
-                        <small>100 m2</small>
-                        <small>Cho thuê căn hộ và chung cư</small>
-                        <small>20/7/2021</small>
-                    </div>
-                    <div class="thong-tin-san-pham">
-                        <p>10.000.000đ</p>
-                        <button href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">
-                            <i class="fas fa-phone-alt"></i>
-                            034565***** Hiện số
-                        </button>
-                        <div class="luu-xoa-san-pham">
+                            <a><i class="fas fa-book"></i></a>
                             <a><img src="assets/images/icon/luu.png"></a>
                             <a><img src="assets/images/icon/xoa.png"></a>
                         </div>
@@ -480,7 +501,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -521,7 +542,10 @@
             </div>
         </div>
     </footer>
-    <div class="modal fade modal-thong-tin" id="modal-thong-tin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <-- MODAL THONG TIN -->
+    <div class="modal fade modal-thong-tin" id="modal-thong-tin" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-thong-tin-desktop" role="document">
             <div class="modal-content modal-thong-tin-content">
                 <div class="container">

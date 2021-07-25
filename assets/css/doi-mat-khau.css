@@ -1,0 +1,33 @@
+.form-doi-mat-khau{
+    padding: 50px 150px;
+}
+.btn-luu-lai{
+    margin: auto;
+    margin-top: 10px;
+}
+.thong-tin-ca-nhan{
+    background: #C4C4C4 !important;
+}
+.doi-mat-khau{
+    background: #12026B !important;
+}
+@media (max-width: 1200px) {
+    .doi-mat-khau{
+        padding: 40px 100px;
+    }
+}
+@media (max-width: 992px) {
+    .doi-mat-khau{
+        padding: 40px 70px;
+    }
+}
+@media (max-width: 767px) {
+    .doi-mat-khau{
+        padding: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .doi-mat-khau{
+        padding: 20px 30px;
+    }
+}

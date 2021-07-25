@@ -2,17 +2,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Đăng nhập</title>
+    <title>Đổi mật khẩu</title>
     <link rel="icon" href="assets/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- jQuery library -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
 
     <!-- Libs -->
     <script src="assets/libs/bootstrap4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/libs/bootstrap4/css/bootstrap.css">
     <script src="assets/libs/fontawesome/fontawesome.js" crossorigin="anonymous"></script>
+    <script src="assets/libs/bootstrap4/js/bootstrap.bundle.min.js"></script>
 
     <!-- Fonts -->
     <link rel="stylesheet" href=""/>
@@ -21,6 +23,8 @@
     <!-- My Style -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/thog-tin-ca-nhan.css">
+    <link rel="stylesheet" href="assets/css/doi-mat-khau.css">
 </head>
 
 <body>
@@ -67,31 +71,39 @@
             </div>
         </div>
     </header>
-    <main class="main content-dang-nhap">
-        <div class="container">
-            <div class="muc-dang-ky">
-                <h1>Đăng nhập</h1>
-                <div class="row">
-                    <div class="col-md-6 col-12 img-login">
-                        <img src="assets/images/login.png">
-                    </div>
-                    <div class="col-md-6 col-12 login-right">
-                        <form class="form form-dang-nhap">
-                            <label>Số điện thoại</label>
-                            <input type="email" placeholder="Nhập số điện thoại">
-                            <label>Mật khẩu</label>
-                            <input type="password" placeholder="**********">
-                            <div class="d-flex">
-                                <input class="checkbox-dieu-khoan" type="checkbox">
-                                <p class="dieu-khoan">Bạn chưa có tài khoản?
-                                    <a href=""> Đăng ký</a>
-                                </p>
-                            </div>
-                            <div class="justify-content-between d-flex">
-                                <a class="dang-ky" href="/dang-ky.html">Đăng ký</a>
-                                <a class="dang-nhap" href="/dang-nhap.html">Đăng nhập</a>
-                            </div>
-                        </form>
+    <main class="main">
+        <div class="container ca-nhan">
+            <div class="row ca-nhan-item">
+                <a class="thong-tin-ca-nhan">
+                    Thông tin cá nhân
+                </a>
+                <a class="muc-tin-da-luu">
+                    Tin đã lưu
+                </a>
+                <a class="doi-mat-khau">
+                    Đổi mật khẩu
+                </a>
+            </div>
+            <div class="form-doi-mat-khau">
+                <div class="muc-dang-ky">
+                    <h1>Đổi mật khẩu</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-12 img-login">
+                            <img src="assets/images/doi-mat-khau.png">
+                        </div>
+                        <div class="col-md-6 col-12 login-right">
+                            <form class="form form-dang-nhap">
+                                <label>Mật khẩu hiện tại</label>
+                                <input type="password" placeholder="**********">
+                                <label>Mật khẩu mới</label>
+                                <input type="password" placeholder="**********">
+                                <label>Nhập lại mật khẩu mới</label>
+                                <input type="password" placeholder="**********">
+                                <div class="justify-content-between d-flex">
+                                    <button class="btn-dang-ky btn-luu-lai" type="submit">Lưu lại</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -30,7 +30,7 @@
     padding-left: 0px;
 }
 .dang-ky{
-    color: #0957CB;
+    color: #0957CB !important;
     border: 1px solid #0957CB;
     border-radius: 25px;
     padding: 5px 20px;
@@ -38,18 +38,30 @@
 .tim-kiem, .tin-da-luu, .img-social, th button, th img, .dang-nhap, .dang-ky:hover{
     cursor: pointer;
 }
+.tin-da-luu:hover{
+    text-decoration: none;
+}
+th button:focus{
+    outline: none;
+}
 .dang-nhap{
-    color: white;
+    color: white !important;
     background: #0957CB;
     border-radius: 25px;
     border: 0px;
-    padding: 5px 15px;
+    padding: 6px 15px;
 }
 .dang-ky:focus{
     outline: none;
 }
 .dang-nhap:focus{
     outline: none;
+}
+.dang-ky:hover{
+    text-decoration: unset;
+}
+.dang-nhap:hover{
+    text-decoration: unset;
 }
 .header-content > h1{
     font-family: Merriweather;
@@ -152,8 +164,11 @@
     background: #F4F7FC;
     padding: 130px 0px 50px 0px;
 }
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background: white;
+}
+thead tr{
+    background: unset !important;
 }
 .checkbox-all{
     bottom: 15px;
@@ -232,7 +247,7 @@ td{
 .footer-logo{
     text-align: center;
 }
-.footer-logo > img{
+.footer-logo > a > img{
     height: 60%;
 }
 .fb{
@@ -247,7 +262,7 @@ td{
         font-size: 14px;
     }
     .dang-nhap{
-        padding: 5px 10px;
+        padding: 6px 10px;
         font-size: 14px;
     }
     .header-content > h1{
@@ -302,7 +317,7 @@ td{
         font-size: 13px;
     }
     .dang-nhap{
-        padding: 5px 8px;
+        padding: 6px 8px;
         font-size: 13px;
     }
     .header-content > h1{
@@ -319,11 +334,11 @@ td{
     .tin-da-luu{
         font-size: 13px;
         margin: 3px;
-        padding: 8px 15px;
+        padding: 8px 12px;
     }
     .tin-da-luu img{
         height: 60%;
-        margin-bottom: 2px;
+        margin-bottom: 3px;
     }
     .chon-loc-item{
         padding: 8px 10px 8px 20px;
@@ -485,8 +500,11 @@ td{
         padding: 3px 10px;
         font-size: 14px;
     }
+    .luu-xoa-san-pham{
+        margin-top: 20px;
+    }
     .luu-xoa-san-pham img{
-        margin: 20px 5px 0px 5px;
+        margin: 0px 5px 5px 5px;
     }
     .mo-ta-san-pham a, .luu-xoa-san-pham img, .thong-tin-san-pham button:hover{
         cursor: pointer;
@@ -543,7 +561,7 @@ td{
         font-size: 12px;
     }
     .dang-nhap{
-        padding: 2px 5px;
+        padding: 3px 5px;
         font-size: 12px;
     }
     .navbar-nav{
@@ -588,8 +606,11 @@ td{
         padding: 2px 5px;
         font-size: 14px;
     }
+    .luu-xoa-san-pham{
+        margin-top: 10px;
+    }
     .luu-xoa-san-pham img{
-        margin: 10px 3px 0px 3px;
+        margin: 0px 3px 4px 3px;
     }
     .form-control {
         padding: 5px 0px;
@@ -615,9 +636,9 @@ td{
         margin-right: auto;
     }
     .chon-loc-item {
-        padding: 4px 6px 6px 12px;
-        font-size: 11px;
-        margin: 2px 0px;
+        padding: 4px 4px 6px 12px;
+        font-size: 12px;
+        margin: 3px 0px;
         background-position: 4px center;
         background-size: 11px;
     }

@@ -30,7 +30,9 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-2 col-sm-1 col-md-1 logo-header">
-                    <img src="assets/images/logo.png">
+                    <a href="http://dev.batdongsan.jp/">
+                        <img src="assets/images/logo.png">
+                    </a>
                 </div>
                 <div class="col-5 col-sm-6 col-md-7 header-menu">
                     <nav class="navbar navbar-expand-md navbar-dark">
@@ -44,24 +46,24 @@
                         <div class="collapse navbar-collapse" id="collapsibleNavbar">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Tin chính chủ</a>
+                                    <a class="nav-link" href="http://dev.batdongsan.jp/">Tin chính chủ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Giới thiệu</a>
+                                    <a class="nav-link" href="/gioi-thieu.html">Giới thiệu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Bảng giá</a>
+                                    <a class="nav-link" href="/bang-gia.html">Bảng giá</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Quy định</a>
+                                    <a class="nav-link" href="/quy-dinh.html">Quy định</a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
                 <div class="col-5 col-sm-5 col-md-4 login">
-                    <button class="dang-ky">Đăng ký</button>
-                    <button class="dang-nhap">Đăng nhập</button>
+                    <a class="dang-ky" href="http://dev.batdongsan.jp/dang-ky.html">Đăng ký</a>
+                    <a class="dang-nhap" href="http://dev.batdongsan.jp/dang-nhap.html">Đăng nhập</a>
                 </div>
             </div>
         </div>
@@ -79,32 +81,10 @@
     <section class="chon-loc container">
         <form>
             <div class="chon-loc-row d-flex">
-                <a class="tin-da-luu" data-toggle="modal" data-target="#Modal-tin-da-luu">
+                <a class="tin-da-luu" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được tin đã lưu!');">
                     <img src="assets/images/icon/da-luu.png">
                     Tin đã lưu
                 </a>
-                <!-- MODAL TIN DA LUU -->
-                <div class="modal fade" id="Modal-tin-da-luu" tabindex="-1" role="dialog"
-                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END MODAL TIN DA LUU -->
                 <div class="select">
                     <select class="chon-loc-item bat-dong-san">
                         <option value="volvo">Bất động sản</option>
@@ -151,7 +131,8 @@
             <div class="form-tim-kiem d-flex">
                 <div class="form-group has-search">
                     <span class="fa fa-search form-control-feedback"></span>
-                    <input type="text" class="form-control" placeholder="Tìm kiếm">
+                    <input type="search" class="form-control rounded" placeholder="Tìm kiếm" aria-label="Search"
+                           aria-describedby="search-addon" />
                 </div>
                 <div class="modal-tim-kiem">
                     <button type="button" class="btn btn-primary btn-filter" data-toggle="modal"
@@ -227,8 +208,8 @@
                     <td>SỐ ĐIỆN THOẠI</td>
                     <td>NGÀY ĐĂNG</td>
                     <td>
-                        <img src="assets/images/icon/luu.png">
-                        <img src="assets/images/icon/xoa.png">
+                        <a><img src="assets/images/icon/luu.png"></a>
+                        <a><img src="assets/images/icon/xoa.png"></a>
                     </td>
                 </tr>
                 </thead>
@@ -262,12 +243,12 @@
                     </th>
                     <th class="so-dien-thoai">
                         <p>043 292****</p>
-                        <button class="btn-hien-so">Hiện số</button>
+                        <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
                     <th class="luu-xoa">
-                        <img src="assets/images/icon/luu.png">
-                        <img src="assets/images/icon/xoa.png">
+                        <a><img src="assets/images/icon/luu.png"></a>
+                        <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
                 <tr>
@@ -296,12 +277,12 @@
                     </th>
                     <th class="so-dien-thoai">
                         <p>043 292****</p>
-                        <button class="btn-hien-so">Hiện số</button>
+                        <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
                     <th class="luu-xoa">
-                        <img src="assets/images/icon/luu.png">
-                        <img src="assets/images/icon/xoa.png">
+                        <a><img src="assets/images/icon/luu.png"></a>
+                        <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
                 <tr>
@@ -330,12 +311,12 @@
                     </th>
                     <th class="so-dien-thoai">
                         <p>043 292****</p>
-                        <button class="btn-hien-so">Hiện số</button>
+                        <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
                     <th class="luu-xoa">
-                        <img src="assets/images/icon/luu.png">
-                        <img src="assets/images/icon/xoa.png">
+                        <a><img src="assets/images/icon/luu.png"></a>
+                        <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
                 <tr>
@@ -364,12 +345,12 @@
                     </th>
                     <th class="so-dien-thoai">
                         <p>043 292****</p>
-                        <button class="btn-hien-so">Hiện số</button>
+                        <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
                     <th class="luu-xoa">
-                        <img src="assets/images/icon/luu.png">
-                        <img src="assets/images/icon/xoa.png">
+                        <a><img src="assets/images/icon/luu.png"></a>
+                        <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
                 <tr>
@@ -398,12 +379,12 @@
                     </th>
                     <th class="so-dien-thoai">
                         <p>043 292****</p>
-                        <button class="btn-hien-so">Hiện số</button>
+                        <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
                     <th class="luu-xoa">
-                        <img src="assets/images/icon/luu.png">
-                        <img src="assets/images/icon/xoa.png">
+                        <a><img src="assets/images/icon/luu.png"></a>
+                        <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
                 <tr>
@@ -432,12 +413,12 @@
                     </th>
                     <th class="so-dien-thoai">
                         <p>043 292****</p>
-                        <button class="btn-hien-so">Hiện số</button>
+                        <button class="btn-hien-so" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">Hiện số</button>
                     </th>
                     <th class="ngay-dang">20/7/2021</th>
                     <th class="luu-xoa">
-                        <img src="assets/images/icon/luu.png">
-                        <img src="assets/images/icon/xoa.png">
+                        <a><img src="assets/images/icon/luu.png"></a>
+                        <a><img src="assets/images/icon/xoa.png"></a>
                     </th>
                 </tr>
                 </tbody>
@@ -446,7 +427,7 @@
             <div class="content-mobile">
                 <div class="san-pham d-flex">
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="checkbox-mobile1">
+                        <input type="checkbox" name='domainList' class="form-check-input" id="checkbox-mobile1">
                     </div>
                     <div class="mo-ta-san-pham">
                         <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
@@ -460,19 +441,19 @@
                     </div>
                     <div class="thong-tin-san-pham">
                         <p>10.000.000đ</p>
-                        <button>
+                        <button href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">
                             <i class="fas fa-phone-alt"></i>
                             034565***** Hiện số
                         </button>
                         <div class="luu-xoa-san-pham">
-                            <img src="assets/images/icon/luu.png">
-                            <img src="assets/images/icon/xoa.png">
+                            <a><img src="assets/images/icon/luu.png"></a>
+                            <a><img src="assets/images/icon/xoa.png"></a>
                         </div>
                     </div>
                 </div>
                 <div class="san-pham d-flex">
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="checkbox-mobile2">
+                        <input type="checkbox" name='domainList' class="form-check-input" id="checkbox-mobile2">
                     </div>
                     <div class="mo-ta-san-pham">
                         <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
@@ -486,19 +467,19 @@
                     </div>
                     <div class="thong-tin-san-pham">
                         <p>10.000.000đ</p>
-                        <button>
+                        <button href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">
                             <i class="fas fa-phone-alt"></i>
                             034565***** Hiện số
                         </button>
                         <div class="luu-xoa-san-pham">
-                            <img src="assets/images/icon/luu.png">
-                            <img src="assets/images/icon/xoa.png">
+                            <a><img src="assets/images/icon/luu.png"></a>
+                            <a><img src="assets/images/icon/xoa.png"></a>
                         </div>
                     </div>
                 </div>
                 <div class="san-pham d-flex">
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="checkbox-mobile3">
+                        <input type="checkbox" name='domainList' class="form-check-input" id="checkbox-mobile3">
                     </div>
                     <div class="mo-ta-san-pham">
                         <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
@@ -512,19 +493,19 @@
                     </div>
                     <div class="thong-tin-san-pham">
                         <p>10.000.000đ</p>
-                        <button>
+                        <button href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">
                             <i class="fas fa-phone-alt"></i>
                             034565***** Hiện số
                         </button>
                         <div class="luu-xoa-san-pham">
-                            <img src="assets/images/icon/luu.png">
-                            <img src="assets/images/icon/xoa.png">
+                            <a><img src="assets/images/icon/luu.png"></a>
+                            <a><img src="assets/images/icon/xoa.png"></a>
                         </div>
                     </div>
                 </div>
                 <div class="san-pham d-flex">
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="checkbox-mobile4">
+                        <input type="checkbox" name='domainList' class="form-check-input" id="checkbox-mobile4">
                     </div>
                     <div class="mo-ta-san-pham">
                         <a data-toggle="modal" data-target="#modal-thong-tin">Cho thuê căn hộ 2 ngủ số 1 Phạm Hùng</a>
@@ -538,13 +519,13 @@
                     </div>
                     <div class="thong-tin-san-pham">
                         <p>10.000.000đ</p>
-                        <button>
+                        <button href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được số điện thoại!');">
                             <i class="fas fa-phone-alt"></i>
                             034565***** Hiện số
                         </button>
                         <div class="luu-xoa-san-pham">
-                            <img src="assets/images/icon/luu.png">
-                            <img src="assets/images/icon/xoa.png">
+                            <a><img src="assets/images/icon/luu.png"></a>
+                            <a><img src="assets/images/icon/xoa.png"></a>
                         </div>
                     </div>
                 </div>
@@ -555,7 +536,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-2 footer-logo">
-                    <img src="assets/images/logo.png">
+                    <a href="http://dev.batdongsan.jp/"><img src="assets/images/logo.png"></a>
                 </div>
                 <div class="col-8">
                     <h2 class="tittle-footer">ABC BẤT ĐỘNG SẢN</h2>
@@ -583,7 +564,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="https://www.youtobe.com/">
+                        <a href="https://www.youtube.com/">
                             <img class="img-social" src="assets/images/youtobe.png">
                         </a>
                     </div>
@@ -773,20 +754,6 @@
     </div>
 
 </div>
-
-<script>
-    $( function() {
-        $( '.checkbox-all' ).live( 'change', function() {
-            $( '.form-check-input' ).attr( 'checked', $( this ).is( ':checked' ) ? 'checked' : '' );
-            $( this ).next().text( $( this ).is( ':checked' ) ? 'Uncheck All' : 'Check All' );
-        });
-        $( '.form-check-input' ).live( 'change', function() {
-            $( '.form-check-input' ).length == $( '.form-check-input:checked' ).length ? $( '.checkbox-all' ).attr( 'checked', 'checked' ).next().text( 'Uncheck All' ) : $( '.checkbox-all' ).attr( 'checked', '' ).next().text( 'Check All' );
-
-        });
-    });
-</script>
-
 
 <script language="javascript">
     // Chức năng chọn hết

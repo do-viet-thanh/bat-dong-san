@@ -1,0 +1,56 @@
+.form-tim-kiem{
+    display: flex !important;
+    padding-top: 30px;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    width: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    color: #2E3B52;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+    background: #DAE1EC;
+}
+.table-bordered th, .table-bordered td {
+    border: 0px !important;
+    padding: 5px;
+    text-align: center;
+}
+.table-bordered th, .table-bordered td {
+    border: 0px;
+    color: unset;
+}
+.thong-tin-ca-nhan {
+    background: #C4C4C4 !important;
+}
+.muc-tin-da-luu{
+    background: #12026B !important;
+}
+.luu-xoa-san-pham i{
+    color: #7D90B2;
+    font-size: 18px;
+    margin-right: 5px;
+}
+th > a > i{
+    color: #7D90B2;
+    margin-top: 5px;
+    font-size: 18px;
+}
+th > a > i:focus{
+    color: #FF8A00;
+}
+.luu-xoa-san-pham i:focus{
+    color: #FF8A00;
+}
+@media (max-width: 767px) {
+    .table-bordered{
+        display: none !important;
+    }
+}
+@media (max-width: 576px) {
+    .has-search .form-control-feedback {
+        top: 28px;
+    }
+}
