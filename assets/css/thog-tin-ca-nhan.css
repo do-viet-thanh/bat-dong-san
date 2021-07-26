@@ -43,6 +43,12 @@
     font-weight: 500;
     font-size: 25px;
 }
+.ca-nhan-item a:hover{
+    text-decoration: none;
+}
+.dang-ky{
+    margin-right: 5px;
+}
 .thong-tin-ca-nhan{
     border-radius: 15px 0px 0px 0px;
     background: #12026B !important;

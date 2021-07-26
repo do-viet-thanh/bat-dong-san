@@ -37,7 +37,7 @@
                         <img src="assets/images/logo.png">
                     </a>
                 </div>
-                <div class="col-5 col-sm-6 col-md-7 header-menu">
+                <div class="col-5 col-sm-6 col-md-8 header-menu">
                     <nav class="navbar navbar-expand-md navbar-dark">
                         <!-- Toggler/collapsibe Button -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -77,7 +77,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-5 col-sm-5 col-md-4 login">
+                <div class="col-5 col-sm-5 col-md-3 login">
                     <a class="dang-ky" href="http://dev.batdongsan.jp/dang-ky.html">Đăng ký</a>
                     <a class="dang-nhap" href="http://dev.batdongsan.jp/dang-nhap.html">Đăng nhập</a>
                 </div>
@@ -87,13 +87,13 @@
     <main class="main">
         <div class="container ca-nhan">
             <div class="row ca-nhan-item">
-                <a class="thong-tin-ca-nhan">
+                <a href="/thong-tin-ca-nhan.html" class="thong-tin-ca-nhan">
                     Thông tin cá nhân
                 </a>
-                <a class="muc-tin-da-luu">
+                <a href="/tin-da-luu.html" class="muc-tin-da-luu">
                     Tin đã lưu
                 </a>
-                <a class="doi-mat-khau">
+                <a href="/doi-mat-khau.html" class="doi-mat-khau">
                     Đổi mật khẩu
                 </a>
             </div>
@@ -103,7 +103,7 @@
                     <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                            aria-describedby="search-addon" />
                 </div>
-                <div class="modal-tim-kiem">
+                <div class="modal-tim-kiem modal-desktop">
                     <button type="button" class="btn btn-primary btn-filter" data-toggle="modal" data-target="#exampleModal">
                         <img src="assets/images/icon/Filter.png">
                         Tìm kiếm nâng cao
@@ -117,42 +117,134 @@
                                     <div class="select">
                                         <select class="chon-loc-item bat-dong-san">
                                             <option value="volvo">Bất động sản</option>
+                                            <option value="2" >Bán căn hộ</option>
+                                            <option value="3" >Bán nhà ở</option>
+                                            <option value="4" >Bán đất</option>
+                                            <option value="5" >Bán kho, xưởng</option>
                                         </select>
                                     </div>
                                     <div class="select">
                                         <select class="chon-loc-item thanh-pho">
                                             <option value="volvo">Tỉnh/Thành phố</option>
+                                            <option value="1"  >Thành phố Hà Nội</option>
+                                            <option value="2"  >Tp Hồ Chí Minh</option>
+                                            <option value="4"  >Tỉnh Cao Bằng</option>
+                                            <option value="6"  >Tỉnh Bắc Kạn</option>
+                                            <option value="8"  >Tỉnh Tuyên Quang</option>
                                         </select>
                                     </div>
                                     <div class="select">
                                         <select class="chon-loc-item thanh-pho">
                                             <option value="volvo">Quận/Huyện</option>
+                                            <option value="1"  >Quận Ba Đình</option>
+                                            <option value="2"  >Quận Hoàn Kiếm</option>
+                                            <option value="3"  >Quận Tây Hồ</option>
+                                            <option value="4"  >Quận Long Biên</option>
+                                            <option value="5"  >Quận Cầu Giấy</option>
+                                            <option value="6"  >Quận Đống Đa</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="chon-loc-row d-flex">
-                                    <div class="select">
-                                        <select class="chon-loc-item ngay">
-                                            <option value="volvo">Từ ngày</option>
-                                        </select>
-                                    </div>
-                                    <div class="select">
-                                        <select class="chon-loc-item ngay">
-                                            <option value="volvo">Đến ngày</option>
-                                        </select>
-                                    </div>
+                                    <input class="select input-date" type="date" placeholder="Từ" />
+                                    <input class="select input-date" type="date" placeholder="Đến" />
                                     <div class="select">
                                         <select class="chon-loc-item muc-gia">
                                             <option value="volvo">Mức giá</option>
+                                            <option value="1000000000,2000000000" >1 - 2 tỷ</option>
+                                            <option value="2000000000,3000000000" >2 - 3 tỷ</option>
+                                            <option value="3000000000,5000000000" >3 - 5 tỷ</option>
+                                            <option value="5000000000,7000000000" >5 - 7 tỷ</option>
                                         </select>
                                     </div>
                                     <div class="select">
                                         <select class="chon-loc-item dien-tich-select">
                                             <option>Diện tích</option>
+                                            <option value="0,30" >0 - 30 m²</option>
+                                            <option value="30,50" >30 m² - 50 m²</option>
+                                            <option value="50,80" >50 m² - 80 m²</option>
+                                            <option value="80,100" >80 m² - 100 m²</option>
+                                            <option value="100,150" >100 m² - 150 m²</option>
                                         </select>
                                     </div>
                                 </div>
                                 <button class="tim-kiem chon-loc-item">Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-tim-kiem modal-mobile">
+                    <button type="button" class="btn btn-primary btn-filter" data-toggle="modal"
+                            data-target="#exampleModal1">
+                        <img src="assets/images/icon/Filter.png">
+                        Tìm kiếm nâng cao
+                    </button>
+
+                    <!-- Modal tinm kiem -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content modal-loc">
+                                <div class="chon-loc-row d-flex">
+                                    <div class="select">
+                                        <select class="chon-loc-item bat-dong-san">
+                                            <option value="volvo">Bất động sản</option>
+                                            <option value="2" >Bán căn hộ</option>
+                                            <option value="3" >Bán nhà ở</option>
+                                            <option value="4" >Bán đất</option>
+                                            <option value="5" >Bán kho, xưởng</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <select class="chon-loc-item dien-tich-select">
+                                            <option>Diện tích</option>
+                                            <option value="0,30" >0 - 30 m²</option>
+                                            <option value="30,50" >30 m² - 50 m²</option>
+                                            <option value="50,80" >50 m² - 80 m²</option>
+                                            <option value="80,100" >80 m² - 100 m²</option>
+                                            <option value="100,150" >100 m² - 150 m²</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="chon-loc-row d-flex">
+                                    <div class="select">
+                                        <select class="chon-loc-item thanh-pho">
+                                            <option value="volvo">Tỉnh/Thành phố</option>
+                                            <option value="1"  >Thành phố Hà Nội</option>
+                                            <option value="2"  >Tp Hồ Chí Minh</option>
+                                            <option value="4"  >Tỉnh Cao Bằng</option>
+                                            <option value="6"  >Tỉnh Bắc Kạn</option>
+                                            <option value="8"  >Tỉnh Tuyên Quang</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <select class="chon-loc-item thanh-pho">
+                                            <option value="volvo">Quận/Huyện</option>
+                                            <option value="1"  >Quận Ba Đình</option>
+                                            <option value="2"  >Quận Hoàn Kiếm</option>
+                                            <option value="3"  >Quận Tây Hồ</option>
+                                            <option value="4"  >Quận Long Biên</option>
+                                            <option value="5"  >Quận Cầu Giấy</option>
+                                            <option value="6"  >Quận Đống Đa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="chon-loc-row d-flex">
+                                    <input class="select input-date" type="date" placeholder="Từ" />
+                                    <input class="select input-date" type="date" placeholder="Đến" />
+                                </div>
+                                <div class="chon-loc-row d-flex">
+                                    <div class="select">
+                                        <select class="chon-loc-item muc-gia">
+                                            <option value="volvo">Mức giá</option>
+                                            <option value="1000000000,2000000000" >1 - 2 tỷ</option>
+                                            <option value="2000000000,3000000000" >2 - 3 tỷ</option>
+                                            <option value="3000000000,5000000000" >3 - 5 tỷ</option>
+                                            <option value="5000000000,7000000000" >5 - 7 tỷ</option>
+                                        </select>
+                                    </div>
+                                    <button class="tim-kiem chon-loc-item">Tìm kiếm</button>
+                                </div>
                             </div>
                         </div>
                     </div>

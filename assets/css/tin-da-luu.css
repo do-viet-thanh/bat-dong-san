@@ -1,3 +1,6 @@
+.modal-dialog {
+    max-width: 820px;
+}
 .form-tim-kiem{
     display: flex !important;
     padding-top: 30px;
@@ -44,9 +47,40 @@ th > a > i:focus{
 .luu-xoa-san-pham i:focus{
     color: #FF8A00;
 }
+.modal-mobile{
+    display: none;
+}
+@media (max-width: 1200px) {
+    .chon-loc-item {
+        padding: 10px 60px 10px 25px;
+    }
+    .tim-kiem{
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 992px){
+    .modal-content{
+        width: 700px;
+        margin: auto;
+    }
+    .chon-loc-item {
+        padding: 10px 55px 10px 25px;
+    }
+    .input-date {
+        height: 40px;
+    }
+}
 @media (max-width: 767px) {
     .table-bordered{
         display: none !important;
+    }
+    .modal-mobile{
+        display: unset;
+    }
+    .modal-desktop{
+        display: none;
     }
 }
 @media (max-width: 576px) {

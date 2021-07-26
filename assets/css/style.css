@@ -1,4 +1,7 @@
 /* HEADER */
+body{
+    padding: 0px !important;
+}
 .wrapper-top{
     background-image:url(../images/background-header.png);
     position: relative;
@@ -110,13 +113,13 @@ th button:focus{
 }
 
 .chon-loc{
-    width: 80%;
+    width: 70%;
     box-shadow: 0px 21px 43px 0px #0000001A;
     border-radius: 17px;
     background: white;
     padding: 10px 20px;
     position: absolute;
-    transform: translate(12%,-50%);
+    transform: translate(21%,-50%);
 }
 .tin-da-luu{
     background: #FFA800 !important;
@@ -128,11 +131,15 @@ th button:focus{
     margin: 10px;
     padding: 10px 40px;
 }
+.tin-da-luu img{
+    margin: 0px 5px 2px 0px;
+}
 .chon-loc-row{
     justify-content: space-between;
 }
 .chon-loc-item{
-    padding: 10px 40px;
+    outline: none;
+    padding: 10px 32px;
     border-radius: 25px;
     filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
     font-size: 16px;
@@ -142,13 +149,29 @@ th button:focus{
     background-repeat: no-repeat;
     background-position: 20px center;
 }
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #000 !important;
+    font-size: 16px;
+    margin-right: 5px !important;
+}
+.input-date{
+    outline: none;
+    padding: 10px 5px 10px 12px;
+    border-radius: 25px;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+    font-size: 13px;
+    margin: 10px;
+    border: 0px;
+    background: #F3F3FA;
+}
 .tim-kiem{
     background: #0957CB;
     box-shadow: 0px 7px 17px rgba(9, 87, 203, 0.32);
     border-radius: 25px;
     color: white;
     border: 0px;
-    padding: 10px 40px !important;
+    padding: 10px 24px !important;
 }
 .tim-kiem:focus{
     outline: none;
@@ -165,10 +188,11 @@ th button:focus{
 .muc-gia{
     background-image:url(../images/icon/muc-gia.png);
 }
-.dien-tich-select{
-    background-image:url(../images/icon/dien-tich.png);
+.dien-tich-select {
+    background-image: url(../images/icon/dien-tich.png);
 }
 
+/* CONTENT */
 .wrapper-content{
     background: #F4F7FC;
     padding: 130px 0px 50px 0px;
@@ -263,7 +287,12 @@ td{
     margin: 15px 0px;
 }
 /* END FOOTER */
-
+@media (max-width: 1400px){
+    .chon-loc{
+        width: 80%;
+        transform: translate(12%,-50%);
+    }
+}
 @media (max-width: 1200px) {
     /* HEADER */
     .dang-ky{
@@ -286,22 +315,30 @@ td{
     }
     /* END HEADER */
     .chon-loc{
-        width: 75%;
-        transform: translate(16%,-50%);
+        width: 83%;
+        transform: translate(10%,-50%);
+        padding: 10px;
     }
     .tin-da-luu{
         font-size: 15px;
-        margin: 10px;
-        padding: 10px 25px;
+        margin: 5px;
+        padding: 10px 40px;
     }
     .chon-loc-item{
-        padding: 10px 25px;
+        padding: 10px 10px 10px 25px;
         font-size: 15px;
         margin: 5px;
         background-position: 10px center;
     }
+    input[type="date"]:before {
+        font-size: 15px;
+    }
+    .input-date{
+        font-size: 13px;
+        margin: 5px;
+    }
     .tim-kiem{
-        padding: 10px 32px !important;
+        padding: 10px 16px !important;
     }
     /* FOOTER */
     .footer{
@@ -318,6 +355,10 @@ td{
 
 @media (max-width: 992px) {
     /* HEADER */
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 13px;
+        padding-left: 0px;
+    }
     .logo-header{
         padding-right: 0px;
     }
@@ -343,22 +384,35 @@ td{
     .tin-da-luu{
         font-size: 13px;
         margin: 3px;
-        padding: 8px 12px;
+        padding: 8px 30px;
     }
     .tin-da-luu img{
         height: 60%;
-        margin-bottom: 3px;
+        margin: 0px 5px 3px 0px;
+    }
+    .chon-loc{
+        width: 78%;
+        transform: translate(16%,-50%);
     }
     .chon-loc-item{
-        padding: 8px 10px 8px 20px;
+        padding: 8px 6px 8px 20px;
         font-size: 13px;
         margin: 3px;
         background-position: 6px center;
     }
-    .tim-kiem{
-        padding: 8px 10px !important;
+    input[type="date"]:before {
+        font-size: 13px;
     }
-
+    .input-date{
+        font-size: 12px;
+        margin: 3px;
+        padding: 8px 2px 8px 8px;
+        height: 35px;
+        width: 140px;
+    }
+    .tim-kiem{
+        padding: 8px 9px !important;
+    }
     .wrapper-content{
         padding: 100px 0px 30px 0px;
     }
@@ -402,7 +456,16 @@ td{
     }
     /* END FOOTER */
 }
-
+@media(max-width: 850px) {
+    .chon-loc{
+        width: 88%;
+        transform: translate(7%,-50%);
+        padding: 10px;
+    }
+    .input-date{
+        width: 150px;
+    }
+}
 @media (max-width: 767px) {
     .wrapper-top {
         padding: 80px 0px 30px 0px;
@@ -465,11 +528,19 @@ td{
     .modal-dialog {
         max-width: 500px;
     }
+    .chon-loc-item{
+        margin: 5px;
+        background-position: 6px center;
+        width: 225px;
+        padding: 8px 6px 8px 25px;
+    }
+    .input-date{
+        padding: 8px 5px 8px 20px;
+        width: 225px;
+    }
     .tim-kiem {
-        width: 30%;
+        width: 220px;
         margin-top: 5px !important;
-        margin-right: auto !important;
-        margin-left: auto !important;
     }
     .table{
         display: none;
@@ -594,6 +665,23 @@ td{
     .chon-loc{
         display: none;
     }
+    .chon-loc-item {
+        padding: 4px 0px 6px 20px;
+        font-size: 12px;
+        margin: 3px;
+        background-position: 8px center;
+        background-size: 12px;
+        width: 160px;
+    }
+    .input-date{
+        width: 160px;
+        height: 30px;
+    }
+    .tim-kiem {
+        width: 160px;
+        margin-top: 3px !important;
+        padding: 6px 0px !important;
+    }
     .form-tim-kiem{
         position: relative;
     }
@@ -644,20 +732,11 @@ td{
         top: -2px;
     }
     .modal-loc{
-        max-width: 400px;
+        max-width: 370px;
         margin-left: auto;
         margin-right: auto;
     }
-    .chon-loc-item {
-        padding: 4px 4px 6px 12px;
-        font-size: 12px;
-        margin: 3px 0px;
-        background-position: 4px center;
-        background-size: 11px;
-    }
-    .modal-content {
-        padding: 5px;
-    }
+
     /* FOOTER */
     .footer{
         padding: 10px 0px;
