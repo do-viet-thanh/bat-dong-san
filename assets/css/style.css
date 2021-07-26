@@ -12,7 +12,16 @@
     width: 100%;
 }
 .navbar-nav .nav-link {
-    color: black !important;
+    color: #1C3988 !important;
+    font-weight: 500;
+}
+.dropdown-menu {
+    position: absolute;
+    left: 45%;
+    border-radius: 10px;
+}
+.dropdown-item{
+    padding: 3px 10px;
 }
 .navbar-toggler{
     border: 0px;
@@ -413,6 +422,10 @@ td{
         background: white;
         padding: 0px 15px;
         border-radius: 10px;
+    }
+    .dropdown-menu {
+        position: absolute !important;
+        left: 0px;
     }
     .logo-header img{
         width: 40px;
