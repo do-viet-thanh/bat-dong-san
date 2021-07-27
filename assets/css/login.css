@@ -60,6 +60,9 @@
     color: #12026B;
     text-decoration: underline;
 }
+.dieu-khoan a:hover{
+    color: #0957CB;
+}
 .dang-ky {
     color: white !important;
 }
@@ -81,8 +84,15 @@
     padding: 8px 20px;
     font-size: 17px;
 }
-.btn-dang-nhap, .btn-dang-ky:hover{
+.btn-dang-nhap:hover{
     cursor: pointer;
+    text-decoration: none;
+    color: #12026B;
+}
+.btn-dang-ky:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 .btn-dang-nhap, .btn-dang-ky:focus{
     outline: none;
