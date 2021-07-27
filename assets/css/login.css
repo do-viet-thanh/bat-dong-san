@@ -214,7 +214,7 @@
         font-size: 17px;
     }
     .content-dang-nhap{
-        padding: 50px 30px;
+        padding: 70px 30px;
     }
     .form input{
         margin-bottom: 8px;
@@ -235,7 +235,10 @@
     }
     .dieu-khoan {
         font-size: 14px;
-        margin: 2px 0px 20px 0px;
+        margin: 3px 0px 20px 0px;
+    }
+    .checkbox-dieu-khoan {
+        margin: 6px 5px 0px 0px;
     }
     .btn-dang-ky{
         padding: 6px 25px;
