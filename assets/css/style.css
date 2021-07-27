@@ -768,8 +768,8 @@ td{
     }
     .footer-item > img {
         margin-right: 6px;
-        margin-top: 2px;
-        width: 15px;
+        margin-top: 0px;
+        width: 14px;
     }
     .footer-social{
         padding-left: 0px;
@@ -779,6 +779,13 @@ td{
     }
     .fb {
         margin: 10px 0px;
+    }
+    .dia-chi img{
+        width: 12px;
+        margin-right: 8px;
+    }
+    .so-dien-thoai img{
+        margin-top: -2px;
     }
 }
 
