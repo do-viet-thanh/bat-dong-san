@@ -651,11 +651,11 @@ td{
         line-height: 142%;
     }
     .dang-ky {
-        padding: 2px 5px;
+        padding: 4px 5px;
         font-size: 12px;
     }
     .dang-nhap{
-        padding: 3px 5px;
+        padding: 5px;
         font-size: 12px;
     }
     .navbar-nav{
@@ -714,7 +714,7 @@ td{
     }
     .thong-tin-san-pham button{
         border-radius: 5px 0px;
-        padding: 2px 5px;
+        padding: 2px 3px;
         font-size: 14px;
     }
     .luu-xoa-san-pham{
@@ -724,9 +724,10 @@ td{
         margin: 0px 3px 4px 3px;
     }
     .form-control {
-        padding: 5px 0px;
+        padding: 6px 0px;
         font-size: 14px;
         padding-left: 20px !important;
+        width: 160px;
     }
     .btn-filter {
         font-size: 14px;
@@ -755,7 +756,7 @@ td{
         text-align: left;
     }
     .footer-logo img{
-        height: 52px;
+        height: 50% !important;
     }
     .tittle-footer {
         font-size: 16px;
@@ -766,8 +767,8 @@ td{
         margin-bottom: 2px;
     }
     .footer-item > img {
-        margin-right: 8px;
-        margin-top: 3px;
+        margin-right: 6px;
+        margin-top: 2px;
         width: 15px;
     }
     .footer-social{
@@ -776,7 +777,9 @@ td{
     .img-social {
         height: 25px;
     }
-
+    .fb {
+        margin: 10px 0px;
+    }
 }
 
 /* MODAL */
