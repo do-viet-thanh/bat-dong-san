@@ -111,15 +111,14 @@ th button:focus{
 .modal-dialog {
     max-width: 760px;
 }
-
-.chon-loc{
-    width: 70%;
-    box-shadow: 0px 21px 43px 0px #0000001A;
+.chon-loc {
+    width: 64%;
+    box-shadow: 0px 21px 43px 0px #0000001a;
     border-radius: 17px;
     background: white;
     padding: 10px 20px;
     position: absolute;
-    transform: translate(21%,-50%);
+    transform: translate(28%,-50%);
 }
 .tin-da-luu{
     background: #FFA800 !important;
@@ -139,7 +138,7 @@ th button:focus{
 }
 .chon-loc-item{
     outline: none;
-    padding: 10px 32px;
+    padding: 10px 30px;
     border-radius: 25px;
     filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
     font-size: 16px;
@@ -147,7 +146,7 @@ th button:focus{
     border: 0px;
     background: #F3F3FA;
     background-repeat: no-repeat;
-    background-position: 20px center;
+    background-position: 15px center;
 }
 input[type="date"]:before {
     content: attr(placeholder) !important;
@@ -164,6 +163,7 @@ input[type="date"]:before {
     margin: 10px;
     border: 0px;
     background: #F3F3FA;
+    height: 42px;
 }
 .tim-kiem{
     background: #0957CB;
@@ -171,7 +171,7 @@ input[type="date"]:before {
     border-radius: 25px;
     color: white;
     border: 0px;
-    padding: 10px 24px !important;
+    padding: 10px 16px !important;
 }
 .tim-kiem:focus{
     outline: none;
@@ -287,6 +287,16 @@ td{
     margin: 15px 0px;
 }
 /* END FOOTER */
+@media (max-width: 1500px){
+    .chon-loc{
+        width: 68%;
+        transform: translate(23%,-50%);
+        padding: 10px 17px;
+    }
+    .chon-loc-item {
+        padding: 10px 33px;
+    }
+}
 @media (max-width: 1400px){
     .chon-loc{
         width: 80%;
