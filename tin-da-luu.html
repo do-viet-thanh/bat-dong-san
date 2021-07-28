@@ -168,13 +168,12 @@
                         <img src="assets/images/icon/Filter.png">
                         Tìm kiếm nâng cao
                     </button>
-
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
-                                <div class="chon-loc-row d-flex">
-                                    <div class="select">
+                                <div class="row chon-loc-row d-flex">
+                                    <div class="select col-3">
                                         <select class="chon-loc-item bat-dong-san">
                                             <option value="volvo">Bất động sản</option>
                                             <option value="2" >Bán căn hộ</option>
@@ -183,7 +182,7 @@
                                             <option value="5" >Bán kho, xưởng</option>
                                         </select>
                                     </div>
-                                    <div class="select">
+                                    <div class="select col-3">
                                         <select class="chon-loc-item thanh-pho">
                                             <option value="volvo">Tỉnh/Thành phố</option>
                                             <option value="1"  >Thành phố Hà Nội</option>
@@ -193,7 +192,7 @@
                                             <option value="8"  >Tỉnh Tuyên Quang</option>
                                         </select>
                                     </div>
-                                    <div class="select">
+                                    <div class="select col-3">
                                         <select class="chon-loc-item thanh-pho">
                                             <option value="volvo">Quận/Huyện</option>
                                             <option value="1"  >Quận Ba Đình</option>
@@ -204,20 +203,7 @@
                                             <option value="6"  >Quận Đống Đa</option>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="chon-loc-row d-flex">
-                                    <input class="select input-date" type="date" placeholder="Từ" />
-                                    <input class="select input-date" type="date" placeholder="Đến" />
-                                    <div class="select">
-                                        <select class="chon-loc-item muc-gia">
-                                            <option value="volvo">Mức giá</option>
-                                            <option value="1000000000,2000000000" >1 - 2 tỷ</option>
-                                            <option value="2000000000,3000000000" >2 - 3 tỷ</option>
-                                            <option value="3000000000,5000000000" >3 - 5 tỷ</option>
-                                            <option value="5000000000,7000000000" >5 - 7 tỷ</option>
-                                        </select>
-                                    </div>
-                                    <div class="select">
+                                    <div class="select col-3">
                                         <select class="chon-loc-item dien-tich-select">
                                             <option>Diện tích</option>
                                             <option value="0,30" >0 - 30 m²</option>
@@ -228,7 +214,27 @@
                                         </select>
                                     </div>
                                 </div>
-                                <button class="tim-kiem chon-loc-item">Tìm kiếm</button>
+                                <div class="row chon-loc-row d-flex">
+                                    <div class="col-3">
+                                        <input class="select input-date" type="date" placeholder="Từ" />
+                                    </div>
+                                    <div class="col-3">
+                                        <input class="select input-date" type="date" placeholder="Đến" />
+                                    </div>
+                                    <div class="select col-3">
+                                        <select class="chon-loc-item muc-gia">
+                                            <option value="volvo">Mức giá</option>
+                                            <option value="1000000000,2000000000" >1 - 2 tỷ</option>
+                                            <option value="2000000000,3000000000" >2 - 3 tỷ</option>
+                                            <option value="3000000000,5000000000" >3 - 5 tỷ</option>
+                                            <option value="5000000000,7000000000" >5 - 7 tỷ</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="tim-kiem chon-loc-item">Tìm kiếm</button>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
