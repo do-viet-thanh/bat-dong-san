@@ -17,9 +17,30 @@ body{
 .header-mobile{
     display: none;
 }
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 13px;
+    padding-left: 0px;
+}
 .navbar-nav .nav-link {
     color: #1C3988 !important;
     font-weight: 500;
+}
+.nav-link:hover{
+    color: #FFA800 !important;
+}
+.nav-link:focus{
+    color: #FFA800 !important;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    font-size: 18px;
+}
+.nav-truot{
+    width: 160px;
+    position: absolute;
+    left: 15%;
+}
+.collapse.show {
+    display: contents;
 }
 .dropdown-menu {
     position: absolute;
@@ -38,7 +59,7 @@ body{
 .collapse.show {
     position: absolute;
     top: 120%;
-    left: 10%;
+    left: 15%;
     z-index: 1000;
 }
 .login{
@@ -49,7 +70,7 @@ body{
     color: #0957CB !important;
     border: 1px solid #0957CB;
     border-radius: 25px;
-    padding: 5px 20px;
+    padding: 5px 20px 7px 20px;
 }
 .tim-kiem, .tin-da-luu, .img-social, th button, th img, .dang-nhap, .dang-ky:hover{
     cursor: pointer;
@@ -65,7 +86,7 @@ th button:focus{
     background: #0957CB;
     border-radius: 25px;
     border: 0px;
-    padding: 6px 15px;
+    padding: 6px 15px 8px 15px;
 }
 .dang-ky:focus{
     outline: none;
@@ -120,33 +141,34 @@ th button:focus{
     box-shadow: 0px 21px 43px 0px #0000001a;
     border-radius: 17px;
     background: white;
-    padding: 10px 20px;
     position: absolute;
     transform: translate(28%,-50%);
+    padding-top: 5px;
 }
 .tin-da-luu{
     background: #FFA800 !important;
     border: 0px;
     color: white !important;
     border-radius: 25px;
-    box-shadow: 0px 1px 1px 0px #00000040 !important;
     font-size: 16px;
-    margin: 10px;
-    padding: 10px 40px;
+    padding: 10px 30px;
+    position: absolute;
+    width: 84% !important;
+    box-shadow: 0px 2.5px 1px #ff7a00 !important;
 }
 .tin-da-luu img{
     margin: 0px 5px 2px 0px;
 }
 .chon-loc-row{
-    justify-content: space-between;
+    margin: 20px 0px;
 }
 .chon-loc-item{
     outline: none;
-    padding: 10px 30px;
+    padding: 10px 10px 10px 30px;
+    width: 100%;
     border-radius: 25px;
     filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
-    font-size: 16px;
-    margin: 10px;
+    font-size: 18px;
     border: 0px;
     background: #F3F3FA;
     background-repeat: no-repeat;
@@ -155,19 +177,18 @@ th button:focus{
 input[type="date"]:before {
     content: attr(placeholder) !important;
     color: #000 !important;
-    font-size: 16px;
+    font-size: 18px;
     margin-right: 5px !important;
 }
 .input-date{
     outline: none;
-    padding: 10px 5px 10px 12px;
+    padding: 10px 10px 10px 20px;
     border-radius: 25px;
     filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
-    font-size: 13px;
-    margin: 10px;
+    font-size: 15px;
     border: 0px;
     background: #F3F3FA;
-    height: 42px;
+    width: 100%;
 }
 .tim-kiem{
     background: #0957CB;
@@ -175,6 +196,8 @@ input[type="date"]:before {
     border-radius: 25px;
     color: white;
     border: 0px;
+    width: 20%;
+    margin: auto;
     padding: 10px 16px !important;
 }
 .tim-kiem:focus{
@@ -206,6 +229,9 @@ tr:nth-child(odd) {
 }
 thead tr{
     background: unset !important;
+}
+.table th, .table td {
+    vertical-align: middle;
 }
 .checkbox-all{
     bottom: 15px;
@@ -295,7 +321,6 @@ td{
     .chon-loc{
         width: 68%;
         transform: translate(23%,-50%);
-        padding: 10px 17px;
     }
     .chon-loc-item {
         padding: 10px 33px;
@@ -310,11 +335,11 @@ td{
 @media (max-width: 1200px) {
     /* HEADER */
     .dang-ky{
-        padding: 5px 15px;
+        padding: 5px 15px 7px 15px;
         font-size: 14px;
     }
     .dang-nhap{
-        padding: 6px 10px;
+        padding: 6px 10px 8px 10px;
         font-size: 14px;
     }
     .header-content > h1{
@@ -331,17 +356,17 @@ td{
     .chon-loc{
         width: 83%;
         transform: translate(10%,-50%);
-        padding: 10px;
+    }
+    .chon-loc-row{
+        margin: 15px 0px;
     }
     .tin-da-luu{
         font-size: 15px;
-        margin: 5px;
         padding: 10px 40px;
     }
     .chon-loc-item{
         padding: 10px 10px 10px 25px;
         font-size: 15px;
-        margin: 5px;
         background-position: 10px center;
     }
     input[type="date"]:before {
@@ -349,7 +374,6 @@ td{
     }
     .input-date{
         font-size: 13px;
-        margin: 5px;
     }
     .tim-kiem{
         padding: 10px 16px !important;
@@ -370,8 +394,7 @@ td{
 @media (max-width: 992px) {
     /* HEADER */
     .navbar-expand-md .navbar-nav .nav-link {
-        padding-right: 13px;
-        padding-left: 0px;
+        font-size: 16px;
     }
     .logo-header{
         padding-right: 0px;
@@ -395,14 +418,16 @@ td{
         padding: 0px;
     }
     /* END HEADER */
+    .col-3{
+        padding: 0px 10px;
+    }
     .tin-da-luu{
         font-size: 13px;
-        margin: 3px;
         padding: 8px 30px;
+        width: 88% !important;
     }
     .tin-da-luu img{
         height: 60%;
-        margin: 0px 5px 3px 0px;
     }
     .chon-loc{
         width: 78%;
@@ -411,7 +436,6 @@ td{
     .chon-loc-item{
         padding: 8px 6px 8px 20px;
         font-size: 13px;
-        margin: 3px;
         background-position: 6px center;
     }
     input[type="date"]:before {
@@ -419,10 +443,7 @@ td{
     }
     .input-date{
         font-size: 12px;
-        margin: 3px;
         padding: 8px 2px 8px 8px;
-        height: 35px;
-        width: 140px;
     }
     .tim-kiem{
         padding: 8px 9px !important;
@@ -474,10 +495,6 @@ td{
     .chon-loc{
         width: 88%;
         transform: translate(7%,-50%);
-        padding: 10px;
-    }
-    .input-date{
-        width: 150px;
     }
 }
 @media (max-width: 767px) {
@@ -492,7 +509,7 @@ td{
         display: unset !important;
     }
     .header-desktop{
-        display: none;
+        display: none !important;
     }
     .header-content > h1 {
         font-size: 28px;
@@ -501,16 +518,14 @@ td{
         font-size: 16px;
         margin-bottom: 0px;
     }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: 5px 0px !important;
+    }
     .navbar-nav{
         background: white;
         border-radius: 5px;
-        box-shadow: 0px 8px 8px rgb(0 0 0 / 50%);
-    }
-    .nav-item{
-        padding: 0px 15px;
-    }
-    .nav-item:hover{
-        background: #F4F7FC;
+        width: 100%;
+        padding: 5px 15px;
     }
     .dropdown-menu {
         position: absolute !important;
@@ -534,6 +549,10 @@ td{
     }
     .chon-loc{
         display: none;
+    }
+    .chon-loc-row {
+        margin: 5px 0px;
+        justify-content: space-between;
     }
     .form-tim-kiem{
         display: flex !important;
@@ -563,6 +582,7 @@ td{
     .input-date{
         padding: 8px 5px 8px 20px;
         width: 225px;
+        margin: 5px;
     }
     .tim-kiem {
         width: 220px;
@@ -674,9 +694,6 @@ td{
         padding: 5px;
         font-size: 12px;
     }
-    .collapse.show {
-        left: 15%;
-    }
     .logo-header img{
         width: 35px;
     }
@@ -689,17 +706,24 @@ td{
     .chon-loc{
         display: none;
     }
+    .chon-loc-row{
+        margin: 3px 0px;
+    }
     .chon-loc-item {
-        padding: 4px 0px 6px 20px;
+        padding: 6px 0px 6px 20px;
         font-size: 12px;
         margin: 3px;
         background-position: 8px center;
         background-size: 12px;
-        width: 160px;
+        width: 155px;
+    }
+    .muc-gia{
+        background-size: 9px;
     }
     .input-date{
-        width: 160px;
+        width: 155px;
         height: 30px;
+        margin: 3px;
     }
     .tim-kiem {
         width: 160px;
@@ -931,7 +955,7 @@ td{
     border: 1px solid #12026B;
     border-radius: 30px;
     color: #12026B;
-    padding: 5px 15px;
+    padding: 6px 15px;
     margin-top: 20px;
 }
 .btn-mo-ta button:focus{

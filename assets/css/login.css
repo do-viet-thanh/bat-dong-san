@@ -5,6 +5,17 @@
 .navbar-nav .nav-link {
     color: white !important;
 }
+.nav-link:hover{
+    color: #FFA800 !important;
+}
+.nav-link:focus{
+    color: #FFA800 !important;
+}
+.nav-truot-mobile{
+    position: absolute;
+    z-index: 10;
+    left: 16%;
+}
 .main{
     background: #F3F3FA;
     padding: 100px 200px;
@@ -167,6 +178,12 @@
     }
     .navbar-nav .nav-link {
         color: #1C3988 !important;
+    }
+    .navbar-nav {
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+    .nav-link:hover{
+        color: #FFA800 !important;
     }
     .nav-link:focus{
         color: #FFA800 !important;

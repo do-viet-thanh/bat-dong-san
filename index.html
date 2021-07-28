@@ -60,7 +60,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-item nav-link dropdown-toggle " href="javascript:void(0)"
-                                           id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tin tức</a>
+                                           id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tin tức</a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                             <a class="dropdown-item" href="/du-an-bat-dong-san.html">Dự án bất động sản</a>
                                             <a class="dropdown-item" href="/tin-nha-chinh-chu.html">Tin nhà chính chủ</a>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div>
-                    <nav class="navbar navbar-expand-md navbar-dark">
+                    <nav class="navbar navbar-expand-md navbar-dark nav-truot">
                         <!-- Navbar links -->
                         <div class="collapse navbar-collapse" id="collapsibleNavbarz">
                             <ul class="navbar-nav">
@@ -153,12 +153,14 @@
     </section>
     <section class="chon-loc container">
         <form>
-            <div class="chon-loc-row d-flex">
-                <a class="tin-da-luu" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được tin đã lưu!');">
-                    <img src="assets/images/icon/da-luu.png">
-                    Tin đã lưu
-                </a>
-                <div class="select">
+            <div class="row chon-loc-row d-flex">
+                <div class="col-3">
+                    <a class="tin-da-luu chon-loc-item" href="javascript:void(0)" onclick="confirm('Vui lòng đăng nhập để xem được tin đã lưu!');">
+                        <img src="assets/images/icon/da-luu.png">
+                        Tin đã lưu
+                    </a>
+                </div>
+                <div class="select col-3">
                     <select class="chon-loc-item bat-dong-san">
                         <option value="volvo">Bất động sản</option>
                         <option value="2" >Bán căn hộ</option>
@@ -167,7 +169,7 @@
                         <option value="5" >Bán kho, xưởng</option>
                     </select>
                 </div>
-                <div class="select">
+                <div class="select col-3">
                     <select class="chon-loc-item thanh-pho">
                         <option value="volvo">Tỉnh/Thành phố</option>
                         <option value="1"  >Thành phố Hà Nội</option>
@@ -177,7 +179,7 @@
                         <option value="8"  >Tỉnh Tuyên Quang</option>
                     </select>
                 </div>
-                <div class="select">
+                <div class="select col-3">
                     <select class="chon-loc-item thanh-pho">
                         <option value="volvo">Quận/Huyện</option>
                         <option value="1"  >Quận Ba Đình</option>
@@ -189,10 +191,14 @@
                     </select>
                 </div>
             </div>
-            <div class="chon-loc-row d-flex">
-                <input class="select input-date" type="date" placeholder="Từ" />
-                <input class="select input-date" type="date" placeholder="Đến" />
-                <div class="select">
+            <div class="row chon-loc-row d-flex">
+                <div class="col-3">
+                    <input class="select input-date" type="date" placeholder="Từ" />
+                </div>
+                <div class="col-3">
+                    <input class="select input-date" type="date" placeholder="Đến" />
+                </div>
+                <div class="select col-3">
                     <select class="chon-loc-item muc-gia">
                         <option value="volvo">Mức giá</option>
                         <option value="1000000000,2000000000" >1 - 2 tỷ</option>
@@ -201,7 +207,7 @@
                         <option value="5000000000,7000000000" >5 - 7 tỷ</option>
                     </select>
                 </div>
-                <div class="select">
+                <div class="select col-3">
                     <select class="chon-loc-item dien-tich-select">
                         <option>Diện tích</option>
                         <option value="0,30" >0 - 30 m²</option>
@@ -211,6 +217,8 @@
                         <option value="100,150" >100 m² - 150 m²</option>
                     </select>
                 </div>
+            </div>
+            <div class="row chon-loc-row text-center">
                 <button type="submit" class="tim-kiem chon-loc-item">Tìm kiếm</button>
             </div>
         </form>
