@@ -108,3 +108,11 @@ td {
 .gia-tin h4 {
     font-size: 20px;
 }
+@media (max-width: 767px) {
+    .dung-thu{
+        margin-bottom: 50px;
+    }
+    .best-seller{
+        margin-bottom: 50px;
+    }
+}

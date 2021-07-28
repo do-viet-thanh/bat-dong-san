@@ -166,7 +166,10 @@
         font-size: 14px;
     }
     .navbar-nav .nav-link {
-        color: #3E3E3E !important;
+        color: #1C3988 !important;
+    }
+    .nav-link:focus{
+        color: #FFA800 !important;
     }
     .form label {
         margin-bottom: 5px;

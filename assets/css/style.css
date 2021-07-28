@@ -14,6 +14,9 @@ body{
     position: absolute;
     width: 100%;
 }
+.header-mobile{
+    display: none;
+}
 .navbar-nav .nav-link {
     color: #1C3988 !important;
     font-weight: 500;
@@ -35,6 +38,7 @@ body{
 .collapse.show {
     position: absolute;
     top: 120%;
+    left: 10%;
     z-index: 1000;
 }
 .login{
@@ -484,6 +488,12 @@ td{
     .wrapper-content {
         padding: 30px 0px;
     }
+    .header-mobile{
+        display: unset !important;
+    }
+    .header-desktop{
+        display: none;
+    }
     .header-content > h1 {
         font-size: 28px;
     }
@@ -493,8 +503,14 @@ td{
     }
     .navbar-nav{
         background: white;
+        border-radius: 5px;
+        box-shadow: 0px 8px 8px rgb(0 0 0 / 50%);
+    }
+    .nav-item{
         padding: 0px 15px;
-        border-radius: 10px;
+    }
+    .nav-item:hover{
+        background: #F4F7FC;
     }
     .dropdown-menu {
         position: absolute !important;
@@ -658,10 +674,8 @@ td{
         padding: 5px;
         font-size: 12px;
     }
-    .navbar-nav{
-        background: white;
-        padding: 0px 15px;
-        border-radius: 10px;
+    .collapse.show {
+        left: 15%;
     }
     .logo-header img{
         width: 35px;
